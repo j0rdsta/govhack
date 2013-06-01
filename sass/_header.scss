@@ -10,13 +10,9 @@
 	}
 }
 
-#searchBar {
-	margin-top:50px;
-}
-
 .contain-to-grid .top-bar  {
 	margin-bottom: 0;
-}
+} 
 
 #feature {
 	background: url("../images/skyline.jpg") no-repeat center fixed;
@@ -28,3 +24,31 @@
 	}
 }
 
+ul .has-form {
+	float:left;
+}
+
+#nav-divide {
+	margin-right:20px;
+	margin-left:20px;
+	float:left;
+	height:45px;
+	border-right:1px solid lighten(#333333, 45%);
+}
+
+ul .has-form form #searchText {
+	width:200px;
+	float:left;
+	height:30px;
+	padding-right:25px;
+}
+
+ul .has-form form #searchSub {
+	margin-left:-25px;
+	height:30px;
+	width:22px;
+	border:none;
+	float:left;
+	background:none;
+	background-image:url("../images/search.png");
+}
