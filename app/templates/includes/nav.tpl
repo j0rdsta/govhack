@@ -1,4 +1,4 @@
-<body {if $title eq "FullStop"}class='home'{/if}>
+<body {if $title eq "FullStop"}class='home'{else}class='page'{/if}>
 
 	<!-- Navigation -->
 	<div class="contain-to-grid">
