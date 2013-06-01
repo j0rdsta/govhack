@@ -41,44 +41,32 @@
 		<div class="section-container auto" data-section>
 			<section>
 				<p class="title" data-section-title><a href="#panel1">Restaurants</a></p>
-				<div class="content restaurant" data-section-content>
-					
+				<div class="content restaurant" data-section-content data-category="RESTAURANT">
 				</div>
 			</section>
 			<section>
 				<p class="title" data-section-title><a href="#panel2">Attractions</a></p>
-				<div class="content" data-section-content>
-					<p>Content of section 2.</p>
+				<div class="content" data-section-content data-category="ATTRACTION">
 				</div>
 			</section>
 			<section>
-				<p class="title" data-section-title><a href="#panel2">Tour</a></p>
-				<div class="content" data-section-content>
-					<p>Content of section 2.</p>
+				<p class="title" data-section-title><a href="#panel2">Tours</a></p>
+				<div class="content" data-section-content data-category="TOUR">
 				</div>
 			</section>
 			<section>
 				<p class="title" data-section-title><a href="#panel2">Transport</a></p>
-				<div class="content" data-section-content>
-					<p>Content of section 2.</p>
+				<div class="content" data-section-content data-category="TRANSPORT">
 				</div>
 			</section>
 			<section>
-				<p class="title" data-section-title><a href="#panel2">Journey</a></p>
-				<div class="content" data-section-content>
-					<p>Content of section 2.</p>
-				</div>
-			</section>	
-			<section>
 				<p class="title" data-section-title><a href="#panel2">Events</a></p>
-				<div class="content" data-section-content>
-					<p>Content of section 2.</p>
+				<div class="content" data-section-content data-category="EVENT">
 				</div>
-			</section>	
+			</section>
 			<section>
 				<p class="title" data-section-title><a href="#panel2">Hire</a></p>
-				<div class="content" data-section-content>
-					<p>Content of section 2.</p>
+				<div class="content" data-section-content data-category="HIRE">
 				</div>
 			</section>
 
