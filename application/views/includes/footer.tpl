@@ -10,6 +10,8 @@
 		</div>
 	</footer>
 
+	<div id="test"></div>
+
 	<script>
 	document.write('<script src=' +
 		('__proto__' in {} ? '/javascripts/vendor/zepto' : '/javascripts/vendor/jquery') +
@@ -60,16 +62,19 @@
 	<script>
 		$(function() {
 			$("#search").change(function(){
-				var varname = $(this).val();
-			});
-
-			$.ajax({
-				url:"http://govhack.atdw.com.au/productsearchservice.svc/products?key=278965474541&term=varname",
-				method:"GET",
-				data: {
-					key: 278965474541,
-					term: varname
-				}
+				var query = $(this).val();
+				$.ajax({
+					type: "GET",
+					url:"http://govhack.atdw.com.au/productsearchservice.svc/products",
+					data: {
+						key: 278965474541,
+						term: query,
+						out: "json"
+					},
+					success: function(data){
+		                alert(data);
+		            }
+				});
 			});
 		})
 	</script>
