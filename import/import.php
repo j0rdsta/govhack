@@ -42,13 +42,13 @@ function import_population_csv($filename){
 				$population = (int) $row[$i];
 
 				$q = "
-				INSERT INTO
-				data_population
-				SET
-				`suburb_name` = '$suburb_name',
-				`region` = '$region',
-				`year` = '$year',
-				`population` = '$population'
+					INSERT INTO
+					data_population
+					SET
+					`suburb_name` = '$suburb_name',
+					`region` = '$region',
+					`year` = '$year',
+					`population` = '$population'
 		         ";
 		        $r = mysql_query($q) or die("error in query: ".mysql_error()."<br/>$q");
 
@@ -86,13 +86,13 @@ function import_crime_csv($filename){
 			$count = (int) $row[$i];
 
 			$q = "
-			INSERT INTO
-			data_crime
-			SET
-			`suburb_name` = '$suburb_name',
-			`crime` = '$crime',
-			`year` = '$year',
-			`count` = '$count'
+				INSERT INTO
+				data_crime
+				SET
+				`suburb_name` = '$suburb_name',
+				`crime` = '$crime',
+				`year` = '$year',
+				`count` = '$count'
 	         ";
 	        $r = mysql_query($q) or die("error in query: ".mysql_error()."<br/>$q");
 		}
@@ -103,15 +103,25 @@ function import_crime_csv($filename){
 	dbclose($DBLink);
 }
 
-function create_suburbs() {
-	
-	
-	// Get all crime data
-		// If suburb does not exist create it
-	
-	// Get all population data
-		// If suburb does not exist create it
-		// Calculate mean and stdddev
+// Used for convenience to create suburbs from data_crime & data_population
+function generate_suburbs() {
+	$DBLink = dbconnect();
+
+	$cq = "SELECT DISTINCT `suburb_name` FROM `data_crime` WHERE `suburb_name` NOT IN (SELECT `suburb_name` FROM `suburbs`)";
+    $cr = mysql_query($cq) or die("error in query: ".mysql_error()."<br/>$q");
+    while($row = mysql_fetch_assoc($cr)) {
+    	$suburb_name = mysql_real_escape_string($row['suburb_name']);
+    	$iq = "INSERT INTO suburbs SET `suburb_name` = '$suburb_name', latitude = 0, longitude = 0";
+	    $ir = mysql_query($iq) or die("error in query: ".mysql_error()."<br/>$q");
+    }
+
+	$pq = "SELECT DISTINCT `suburb_name` FROM `data_population` WHERE `suburb_name` NOT IN (SELECT `suburb_name` FROM `suburbs`)";
+    $pr = mysql_query($pq) or die("error in query: ".mysql_error()."<br/>$q");
+    while($row = mysql_fetch_assoc($pr)) {
+    	$suburb_name = mysql_real_escape_string($row['suburb_name']);
+    	$iq = "INSERT INTO suburbs SET `suburb_name` = '$suburb_name', latitude = 0, longitude = 0";
+	    $ir = mysql_query($iq) or die("error in query: ".mysql_error()."<br/>$q");
+    }
 }
 
 
@@ -136,5 +146,7 @@ function update_suburbs() {
 //import_crime_csv('data/crime/runaway_bay.csv');
 //import_crime_csv('data/crime/southport.csv');
 //import_crime_csv('data/crime/surfers_paradise.csv');
+
+generate_suburbs();
 
 ?>
