@@ -31,13 +31,11 @@
 
 	<!-- Search -->
 	<div class="row">
-		<div class="row">
-			<div class="small-2 columns">
-				<label for="search" class="right inline">Search for a location</label>
-			</div>
-			<div class="small-10 columns">
-				<input type="text" id="search" placeholder="eg. Varsity Lakes">
-			</div>
+		<div class="large-2 columns">
+			<label for="search" class="inline">Search for a location</label>
+		</div>
+		<div class="large-10 columns">
+			<input type="text" id="search" placeholder="eg. Varsity Lakes">
 		</div>
 	</div>
 	<hr>

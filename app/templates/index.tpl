@@ -15,7 +15,6 @@
 			</div>
 		</div>
 	</a>
-	<hr>
 	<!-- End Item -->
 	{/foreach}
 
