@@ -22,6 +22,15 @@ class Suburb extends CI_Model {
 		$this->db->limit($limit,$offset);
 		return $this->db->get()->result_array();
 	}
+
+	function GetPopulation($suburb_id) {
+		$this->db->select('year, population');
+		$this->db->from('data_population');
+		$this->db->join('suburbs', 'data_population.suburb_name = suburbs.suburb_name', 'left');
+		$this->db->where(array('suburb_id' => $suburb_id));
+		$this->db->order_by('year', 'ASC');
+		return $this->db->get()->result_array();
+	}
 	
 	function Count($where = null) {
 		$this->db->select('COUNT(*) AS count');

@@ -49,4 +49,12 @@ class Suburbs extends CI_Controller {
 			$title = $suburb_id? 'Edit Suburb' : 'Create Suburb';
 		}
 	}
+
+	function PopulationJSON($suburb_id = null) {
+		$population = $this->Suburb->GetPopulation($suburb_id);
+
+		$this->output
+	    ->set_content_type('application/json')
+	    ->set_output(json_encode($population));
+	}
 }
