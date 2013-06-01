@@ -1,3 +1,4 @@
+
 {foreach $results as $result}
 <!-- Item -->
 <a href="/suburbs/view/{$result.suburb_id}" class="{cycle values='odd,even'}">
