@@ -15,20 +15,17 @@
 				<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
 			</ul>
 
-			<ul class="right">
-				<li class="has-form">
-					<form action="#">
-						<input type="text" placeholder="Search">
-					</form>
-				</li>
-				{if $title != "FullStop"}
-				<li class="divider"></li>
-				<li class="has-form">
-					<a class="button" href="#">Review</a>
-				</li>
-				{/if}
-			</ul>
-			
+			{if $title != "FullStop"}
+				<section class="top-bar-section">
+					<!-- Right Nav Section -->
+					<ul class="right">
+						<li class="divider"></li>
+						<li class="has-form">
+							<a class="button" href="#">Review</a>
+						</li>
+					</ul>
+				</section>
+			{/if}
 		</nav>
 	</div>
 
