@@ -1,4 +1,4 @@
-<?
+<?php
 class Suburb extends CI_Model {
 	function Get($suburb_id) {
 		$this->db->from('suburbs');
