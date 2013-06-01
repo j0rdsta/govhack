@@ -1,3 +1,4 @@
+<pre>
 <?php
 function dbconnect(){
 	include('dbconfig.php');
@@ -11,6 +12,17 @@ function dbclose($DBLink){
 		mysql_close($DBLink);
 		unset($DBLink);
 	}
+}
+
+function strip_array_slashes($array){
+	if(is_array($array)){
+		foreach($array as $k => $v){
+			$array[$k] = stripslashes($v);
+		}
+	} else {
+		$array = stripslashes($array); 
+	}	
+	return $array;
 }
 
 function import_population_csv($filename){
@@ -111,7 +123,7 @@ function generate_suburbs() {
     $cr = mysql_query($cq) or die("error in query: ".mysql_error()."<br/>$q");
     while($row = mysql_fetch_assoc($cr)) {
     	$suburb_name = mysql_real_escape_string($row['suburb_name']);
-    	$iq = "INSERT INTO suburbs SET `suburb_name` = '$suburb_name', latitude = 0, longitude = 0";
+    	$iq = "INSERT INTO suburbs SET `suburb_name` = '$suburb_name'";
 	    $ir = mysql_query($iq) or die("error in query: ".mysql_error()."<br/>$q");
     }
 
@@ -119,20 +131,139 @@ function generate_suburbs() {
     $pr = mysql_query($pq) or die("error in query: ".mysql_error()."<br/>$q");
     while($row = mysql_fetch_assoc($pr)) {
     	$suburb_name = mysql_real_escape_string($row['suburb_name']);
-    	$iq = "INSERT INTO suburbs SET `suburb_name` = '$suburb_name', latitude = 0, longitude = 0";
+    	$iq = "INSERT INTO suburbs SET `suburb_name` = '$suburb_name'";
 	    $ir = mysql_query($iq) or die("error in query: ".mysql_error()."<br/>$q");
     }
+
+	dbclose($DBLink);
 }
 
 
-function update_suburbs() {
-	// Calculate crime mean and stdddev
-	// Calculate population mean and stdddev
+function update_suburbs($update_locations = false) {
+	$DBLink = dbconnect();
 
-	// Go through suburbs
-	// Find lat and long
+	// Calculate mean crime and standard deviation of total crime
+	$cq = "SELECT AVG(total_crime) AS crime_mean, STDDEV(total_crime) AS crime_stddev FROM (SELECT SUM(count) AS total_crime, suburb_name FROM data_crime GROUP BY suburb_name ORDER BY suburb_name ASC) AS suburb_crimes";
+    $cr = mysql_query($cq) or die("error in query: ".mysql_error()."<br/>$q");
 
-	// Update stats
+    if(mysql_num_rows($cr) != 1) {
+        dbclose($DBLink);
+        return null;
+    }
+
+    $crime_meta = mysql_fetch_assoc($cr);
+    $crime_mean = (float) $crime_meta['crime_mean'];
+    $crime_stddev = (float) $crime_meta['crime_stddev'];
+
+	// Calculate mean population and standard deviation of population
+	$pq = "SELECT AVG(total_population) AS population_mean, STDDEV(total_population) AS population_stddev FROM (SELECT SUM(population) AS total_population, suburb_name FROM data_population GROUP BY suburb_name ORDER BY suburb_name ASC) AS suburb_crimes";
+    $pr = mysql_query($pq) or die("error in query: ".mysql_error()."<br/>$q");
+
+    if(mysql_num_rows($pr) != 1) {
+        dbclose($DBLink);
+        return null;
+    }
+    
+    $population_meta = mysql_fetch_assoc($pr);
+    $population_mean = $population_meta['population_mean'];
+    $population_stddev = $population_meta['population_stddev'];
+
+    $suburbs = array();
+
+	$sq = "SELECT * FROM suburbs";
+    $sr = mysql_query($sq) or die("error in query: ".mysql_error()."<br/>$q");
+    while($suburb = mysql_fetch_assoc($sr)) {
+    	$suburb = strip_array_slashes($suburb);
+    	$suburb_name = mysql_real_escape_string($suburb['suburb_name']);
+
+    	if($update_locations) {
+	    	// Find latitude and longitude of suburb
+	    	$location = find_location($suburb['suburb_name']);
+	    	if($location) {
+				$suburb['latitude'] = $location['latitude'];
+				$suburb['longitude'] = $location['longitude'];
+	    	}
+    	}
+
+    	// Calculate crime statistics
+    	$q = "SELECT SUM(count) AS total_crime, suburb_name FROM data_crime WHERE suburb_name = '$suburb_name'";
+    	$r = mysql_query($q) or die("error in query: ".mysql_error()."<br/>$q");
+    	$crime = mysql_fetch_assoc($r);
+    	$suburb['crime_total'] = (int) $suburb['crime_total'];
+    	if($crime['total_crime']) {
+	    	$suburb['crime_total'] = $crime['total_crime'];
+	    	$suburb['crime_percentile'] = ($crime['total_crime'] - $crime_mean) / (float) $crime_stddev;
+    	} else {
+    		$suburb['crime_total'] = null;
+    		$suburb['crime_percentile'] = null;
+    	}
+    }
+
+
+
+    // Update suburbs
+    foreach($suburbs as $suburb) {
+		$uq = "
+			UPDATE `suburbs`
+			SET
+			`suburb_name` = '{$suburb['suburb_name']}',
+			`latitude` = '{$suburb['latitude']}',
+			`longitude` = '{$suburb['longitude']}',
+			`crime_total` = '{$suburb['crime_total']}',
+			`crime_percentile` = '{$suburb['crime_percentile']}',
+			`crime_ranking` = '{$suburb['crime_ranking']}',
+			`crime_growth` = '{$suburb['crime_growth']}',
+			`population_total` = '{$suburb['population_total']}',
+			`population_percentile` = '{$suburb['population_percentile']}',
+			`population_ranking` = '{$suburb['population_ranking']}'
+			WHERE `suburb_id` = '{$suburb['suburb_id']}'
+		";
+		$ur = mysql_query($uq) or die("error in query: ".mysql_error()."<br/>$q");
+    }
+
+	dbclose($DBLink);
+}
+
+function find_location($address) {
+	set_time_limit(0);
+	$urlAddress = urlencode($address);
+	$url = "http://maps.googleapis.com/maps/api/geocode/json?sensor=false&region=au&address=".$urlAddress;
+
+	$request = curl_init();
+	curl_setopt($request,CURLOPT_URL,$url);
+	curl_setopt($request, CURLOPT_RETURNTRANSFER, 1);
+	$response = curl_exec($request);
+	curl_close($request);
+		
+	if($response != false) {
+		$responseObj = json_decode($response);
+		if($responseObj != null && $responseObj != false) {
+			switch($responseObj->status) {
+				case "OK":
+					$lat = $responseObj->results[0]->geometry->location->lat;
+					$lng = $responseObj->results[0]->geometry->location->lng;
+					if(is_numeric($lat) && is_numeric($lng)) {
+						return array('latitude' => $lat, 'longitude' => $lng);
+					} else {
+						error_log("LAT & LNG NOT NUMERIC: " . $address);
+					}
+				break;
+				case "OVER_QUERY_LIMIT":
+						error_log("24HOUR LIMIT REACHED: " . $address);
+						echo "24HOUR LIMIT REACHED: " . $address;
+						die();
+				break;
+				default:					
+					error_log("STATUS ERROR: " . $address);
+				break;
+			}
+		} else {
+			error_log("Faulty JSON ID: " . $address);
+		}
+	} else {
+		error_log("Request failed ID: " . $address);
+	}
+	return null;
 }
 
 //import_population_csv('data/population_data_clean.csv');
@@ -148,5 +279,7 @@ function update_suburbs() {
 //import_crime_csv('data/crime/surfers_paradise.csv');
 
 generate_suburbs();
+update_suburbs();
 
 ?>
+</pre>
