@@ -72,29 +72,42 @@
 				</div>
 			</section>
 			<section>
-				<p class="title" data-section-title><a href="#panel2">Section 2</a></p>
+				<p class="title" data-section-title><a href="#panel2">Attractions</a></p>
 				<div class="content" data-section-content>
 					<p>Content of section 2.</p>
 				</div>
 			</section>
 			<section>
-				<p class="title" data-section-title><a href="#panel2">Section 2</a></p>
+				<p class="title" data-section-title><a href="#panel2">Tour</a></p>
 				<div class="content" data-section-content>
 					<p>Content of section 2.</p>
 				</div>
 			</section>
 			<section>
-				<p class="title" data-section-title><a href="#panel2">Section 2</a></p>
+				<p class="title" data-section-title><a href="#panel2">Transport</a></p>
 				<div class="content" data-section-content>
 					<p>Content of section 2.</p>
 				</div>
 			</section>
 			<section>
-				<p class="title" data-section-title><a href="#panel2">Section 2</a></p>
+				<p class="title" data-section-title><a href="#panel2">Journey</a></p>
 				<div class="content" data-section-content>
 					<p>Content of section 2.</p>
 				</div>
-			</section>									
+			</section>	
+			<section>
+				<p class="title" data-section-title><a href="#panel2">Events</a></p>
+				<div class="content" data-section-content>
+					<p>Content of section 2.</p>
+				</div>
+			</section>	
+			<section>
+				<p class="title" data-section-title><a href="#panel2">Hire</a></p>
+				<div class="content" data-section-content>
+					<p>Content of section 2.</p>
+				</div>
+			</section>				
+
 		</div>
 	</div>
 </div>
