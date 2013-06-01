@@ -7,7 +7,7 @@ class Smartylib extends Smarty {
 	public function __construct() {
 		parent::__construct();
 		
-		$this->caching = Smarty::CACHING_LIFETIME_CURRENT;
+		//$this->caching = Smarty::CACHING_LIFETIME_CURRENT;
 		$this->setCompileDir(FCPATH . APPPATH . 'cache' . DS);
 		$this->setCacheDir(FCPATH . APPPATH . 'cache' . DS);
 		$this->setTemplateDir(FCPATH . APPPATH . 'views' . DS);
