@@ -34,7 +34,7 @@ CREATE TABLE `reviews` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 CREATE TABLE `suburbs` (
-  `suburb_id` int(10) unsigned NOT NULL,
+  `suburb_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `suburb_name` varchar(50) NOT NULL,
   `latitude` decimal(11,7) NOT NULL,
   `longitude` decimal(11,7) NOT NULL,
