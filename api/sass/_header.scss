@@ -2,18 +2,16 @@
 
 .contain-to-grid {
 	border-bottom: 5px solid darken($primary-color, 10%);
-	.top-bar {
-		margin-bottom: 0;
-		a img {
-			margin-top: 7px;
-		}
+}
+
+.top-bar {
+	a img {
+		margin-top: 7px;
 	}
 }
 
-body.page {
-	.contain-to-grid {
-		margin-bottom: 25px;
-	}
+.home .top-bar  {
+	margin-bottom: 0;
 }
 
 #feature {
@@ -21,15 +19,30 @@ body.page {
 	padding-top: 250px;
 	margin-bottom: 35px;
 	color: #FFF;
-	.header {
-		min-height: 87px;
-		background: #ca345e;
-		border-bottom: 10px solid #a12a4b;
-		h1 {
-			padding-bottom: 0;
-			margin-bottom: 0;
-			font-size: 37px;
-			color: #FFF;
-		}
+	h1 {
+		color: #FFF;
 	}
+}
+
+.restaurant_node {
+	height:400px;
+	img {
+		float:left;
+		margin-right:10px;
+	}
+
+	h1 {
+		font-size:18px;
+		color:#ca345e;
+	}
+
+	p {
+		font-size:12px;
+	}
+
+	a {
+
+	}
+
+
 }
