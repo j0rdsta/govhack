@@ -34,7 +34,7 @@
 	{if $title eq "FullStop"}{include "feature.tpl"}{/if}
 
 	<!-- Search -->
-	<div class="row">
+	<div class="row" id="searchBar">
 		<div class="large-2 columns">
 			<label for="search" class="inline">Search for a location</label>
 		</div>
