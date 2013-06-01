@@ -176,8 +176,8 @@ function update_suburbs($update_locations = false) {
     	$suburb = strip_array_slashes($suburb);
     	$suburb_name = mysql_real_escape_string($suburb['suburb_name']);
 
+    	// Find latitude and longitude of suburb using Google Geocode API (only if enabled in params)
     	if($update_locations) {
-	    	// Find latitude and longitude of suburb
 	    	$location = find_location($suburb['suburb_name']);
 	    	if($location) {
 				$suburb['latitude'] = $location['latitude'];
@@ -189,15 +189,32 @@ function update_suburbs($update_locations = false) {
     	$q = "SELECT SUM(count) AS total_crime, suburb_name FROM data_crime WHERE suburb_name = '$suburb_name'";
     	$r = mysql_query($q) or die("error in query: ".mysql_error()."<br/>$q");
     	$crime = mysql_fetch_assoc($r);
-    	$suburb['crime_total'] = (int) $suburb['crime_total'];
-    	if($crime['total_crime']) {
-	    	$suburb['crime_total'] = $crime['total_crime'];
-	    	$suburb['crime_percentile'] = ($crime['total_crime'] - $crime_mean) / (float) $crime_stddev;
+    	$total_crime = (int) $crime['total_crime'];
+    	if($total_crime) {
+	    	$suburb['crime_total'] = $total_crime;
+	    	$suburb['crime_percentile'] = ($total_crime - $crime_mean) / (float) $crime_stddev;
     	} else {
     		$suburb['crime_total'] = null;
     		$suburb['crime_percentile'] = null;
     	}
+
+    	// Calculate population statistics
+    	$q = "SELECT SUM(population) AS total_population, suburb_name FROM data_population WHERE suburb_name = '$suburb_name'";
+    	$r = mysql_query($q) or die("error in query: ".mysql_error()."<br/>$q");
+    	$population = mysql_fetch_assoc($r);
+    	$total_population = (int) $population['total_population'];
+    	if($total_population) {
+	    	$suburb['population_total'] = $total_population;
+	    	$suburb['population_percentile'] = ($total_population - $population_mean) / (float) $population_stddev;
+    	} else {
+    		$suburb['population_total'] = null;
+    		$suburb['population_percentile'] = null;
+    	}
+
+    	$suburbs[] = $suburb;
     }
+
+
 
 
 
