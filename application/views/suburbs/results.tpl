@@ -8,7 +8,7 @@
 		<div class="small-10 columns">
 			<h5>{$result.suburb_name}</h5>
 
-			<p>Crime Rating: 
+			<p>Crime Rating:
 			{if $result.crime_percentile}
 				{if $result.crime_percentile > 1}
 					<span class="radius alert label">High</span>

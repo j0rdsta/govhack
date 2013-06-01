@@ -76,6 +76,56 @@
 		            }
 				});
 			});
+			$.ajax({
+				type: "GET",
+				url:"http://govhack.atdw.com.au/productsearchservice.svc/products",
+				data: {
+					key: 278965474541, // API Key
+					cats: "RESTAURANT", // Category
+					latlong: "-27,153", // Latitude/Long
+					dist: "50", // Distance (km)
+					size: "10", // Number of results
+					out: "json" // Output format
+				},
+				success: function(data){
+					// ($data.products).each(function(index) {
+					// 	$(".section-container section .content.restaurant").html();
+					// });
+					$.each(data, function() {
+						$.each(this, function(k, v) {
+							// Node
+							content = "<div class='node'>";
+
+							// Row
+							content += "<div class='row'>";
+
+							// Image
+							content += "<div class='large-3 columns'>";
+							content += "<img src='" + v.productImage + "' alt='" + v.productName + "' />";
+							content += "</div>";
+
+							// Content
+							content += "<div class='large-9 columns'>";
+							content += "<h5>" + v.productName + "</h5>";
+							content += "<p>" + v.productDescription + "</p>";
+							content += "</div>";
+
+							// /Row
+							content += "</div>";
+
+							// /Node
+							content += "</div>";
+
+							content += "<hr>";
+
+							$(content).appendTo(".section-container section .content.restaurant");
+						});
+					});
+					// alert(data["numberOfResults"]);
+	    //             $(".section-container section .content.restaurant").html(data.products[0]["productName"]);
+	    //             alert(data.products[0]["productName"]);
+	            }
+			});
 		})
 	</script>
 	{/literal}

@@ -11,7 +11,7 @@
 <!-- End Header -->
 
 <!-- Map -->
-<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;aq=0&amp;oq=gold+coast&amp;sll={$suburb.latitude},{$suburb.longitude}&amp;sspn=0.670618,1.352692&amp;ie=UTF8&amp;hq=&amp;hnear=Gold+Coast+Queensland&amp;ll={$suburb.latitude},{$suburb.longitude}&amp;spn=0.670429,1.352692&amp;t=m&amp;z=10&amp;output=embed"></iframe>
+<!-- <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;aq=0&amp;oq=gold+coast&amp;sll={$suburb.latitude},{$suburb.longitude}&amp;sspn=0.670618,1.352692&amp;ie=UTF8&amp;hq=&amp;hnear=Gold+Coast+Queensland&amp;ll={$suburb.latitude},{$suburb.longitude}&amp;spn=0.670429,1.352692&amp;t=m&amp;z=10&amp;output=embed"></iframe> -->
 <hr>
 <!-- End Map -->
 
@@ -41,34 +41,8 @@
 		<div class="section-container auto" data-section>
 			<section>
 				<p class="title" data-section-title><a href="#panel1">Restaurants</a></p>
-				<div class="content" data-section-content>
-					<div class="node">
-						<div class="row">
-							<div class="large-3 columns">
-								<img src="http://placehold.it/175x175" alt="restaurant"/>
-							</div>
-							<div class="large-9 columns">
-							<h5>Restaurant Name</h5>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis arcu at massa condimentum id iaculis magna dignissim. Integer nec est non elit faucibus tristique in eget ipsum. Duis semper aliquam dolor, sed placerat <a href="#">risus</a> sollicitudin eu. 
-								</p>
-							</div>
-						</div>
-					</div>
-					<hr>
-					<div class="node">
-						<div class="row">
-							<div class="large-3 columns">
-								<img src="http://placehold.it/175x175" alt="restaurant"/>
-							</div>
-							<div class="large-9 columns">
-							<h5>Restaurant Name</h5>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis arcu at massa condimentum id iaculis magna dignissim. Integer nec est non elit faucibus tristique in eget ipsum. Duis semper aliquam dolor, sed placerat <a href="#">risus</a> sollicitudin eu. 
-								</p>
-							</div>
-						</div>
-					</div>
+				<div class="content restaurant" data-section-content>
+					
 				</div>
 			</section>
 			<section>
@@ -106,7 +80,7 @@
 				<div class="content" data-section-content>
 					<p>Content of section 2.</p>
 				</div>
-			</section>				
+			</section>
 
 		</div>
 	</div>
