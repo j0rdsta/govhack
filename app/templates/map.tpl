@@ -1,3 +1,4 @@
+{assign var=title value="varname Map"}
 {include "includes/header.tpl"}
 {include "includes/nav.tpl"}
 
