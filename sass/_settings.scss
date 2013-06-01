@@ -949,7 +949,7 @@ $shiny-edge-size: 0;
 //// Titles
 
 // $section-title-color: #333;
-// $section-title-bg: #efefef;
+$section-title-bg: lighten($primary-color, 40%);
 // $section-title-bg-active: darken($section-title-bg, $section-function-factor);
 // $section-title-bg-active-tabs: #fff;
 
