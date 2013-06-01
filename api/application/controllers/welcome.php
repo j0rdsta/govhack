@@ -19,7 +19,12 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+
+		$this->load->library('smartylib');
+		$this->smartylib->assign('bacon', 'cheesels');
+		//$actual = trim($this->smartylib->fetch('smartylib_test.tpl'));
+
+		$this->smartylib->display('welcome_message.tpl');
 	}
 }
 
