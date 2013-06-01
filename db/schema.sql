@@ -36,15 +36,15 @@ CREATE TABLE `reviews` (
 CREATE TABLE `suburbs` (
   `suburb_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `suburb_name` varchar(50) NOT NULL,
-  `latitude` decimal(11,7) NOT NULL,
-  `longitude` decimal(11,7) NOT NULL,
-  `crime_total` int(10) unsigned NOT NULL,
-  `crime_percentile` float NOT NULL,
-  `crime_ranking` int(10) unsigned NOT NULL,
-  `crime_growth` float NOT NULL,
-  `population_total` int(10) unsigned NOT NULL,
-  `population_percentile` float NOT NULL,
-  `population_ranking` int(10) unsigned NOT NULL,
-  `population_growth` float NOT NULL,
+  `latitude` decimal(11,7) DEFAULT NULL,
+  `longitude` decimal(11,7) DEFAULT NULL,
+  `crime_total` int(10) unsigned DEFAULT NULL,
+  `crime_percentile` float DEFAULT NULL,
+  `crime_ranking` int(10) unsigned DEFAULT NULL,
+  `crime_growth` float DEFAULT NULL,
+  `population_total` int(10) unsigned DEFAULT NULL,
+  `population_percentile` float DEFAULT NULL,
+  `population_ranking` int(10) unsigned DEFAULT NULL,
+  `population_growth` float DEFAULT NULL,
   PRIMARY KEY (`suburb_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=56 ;
