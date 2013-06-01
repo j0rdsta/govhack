@@ -1,4 +1,4 @@
-GovHat
+FullStop
 =======
 
 To support the rapid development of the app / website the project should be split into two separate parts:
