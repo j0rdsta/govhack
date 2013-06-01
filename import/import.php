@@ -214,9 +214,31 @@ function update_suburbs($update_locations = false) {
     	$suburbs[] = $suburb;
     }
 
+	function crime_compare($a, $b) {
+		return $a['crime_accumulative'] < $b['crime_accumulative'];
+	}
+	usort($suburbs, "crime_compare");
 
+    for($i = 0; $i < count($suburbs); $i++) {
+    	if(!$suburbs[$i]['crime_accumulative']) {
+    		$suburbs[$i]['crime_ranking'] = null;
+    		continue;
+    	}
+    	$suburbs[$i]['crime_ranking'] = $i + 1;
+    }
 
+    function population_compare($a, $b) {
+		return $a['population_accumulative'] < $b['population_accumulative'];
+	}
+	usort($suburbs, "population_compare");
 
+    for($i = 0; $i < count($suburbs); $i++) {
+    	if(!$suburbs[$i]['population_accumulative']) {
+    		$suburbs[$i]['population_ranking'] = null;
+    		continue;
+    	}
+    	$suburbs[$i]['population_ranking'] = $i + 1;
+    }
 
     // Update suburbs
     foreach($suburbs as $suburb) {
