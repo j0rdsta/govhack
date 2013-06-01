@@ -101,6 +101,28 @@ function import_crime_csv($filename){
 	dbclose($DBLink);
 }
 
+function create_suburbs() {
+	
+	
+	// Get all crime data
+		// If suburb does not exist create it
+	
+	// Get all population data
+		// If suburb does not exist create it
+		// Calculate mean and stdddev
+}
+
+
+function update_suburbs() {
+	// Calculate crime mean and stdddev
+	// Calculate population mean and stdddev
+
+	// Go through suburbs
+	// Find lat and long
+
+	// Update stats
+}
+
 //import_population_csv('data/population_data_clean.csv');
 //import_crime_csv('data/crime/broadbeach.csv');
 //import_crime_csv('data/crime/coolangatta.csv');
