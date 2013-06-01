@@ -8,7 +8,7 @@
 				<li class="name">
 					<h1>
 						<a href="#">
-							Full Stop
+							<img src="images/logo.png" alt="">
 						</a>
 					</h1>
 				</li>
