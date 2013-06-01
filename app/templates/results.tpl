@@ -2,7 +2,7 @@
 <!-- Item -->
 <a href="#" class="{cycle values='odd,even'}">
 	<div class="row">
-		<div class="small-2 columns">
+		<div class="small-2 columns text-center">
 			<img src="{$result.image}" alt="">
 		</div>
 		<div class="small-10 columns">
