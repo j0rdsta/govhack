@@ -61,7 +61,7 @@
 	{literal}
 	<script>
 		$(function() {
-			$("#search").change(function(){
+			$(".search").change(function(){
 				var query = $(this).val();
 				$.ajax({
 					type: "GET",
