@@ -1,0 +1,62 @@
+Suburb,Crime,2008,2009,2010,2011,2012,2008,2009,2010,2011,2012
+Surfers Paradise,Homicide (Murder),1.00,0.00,1.00,1.00,1.00,4.00,0.00,4.00,4.00,4.00
+Surfers Paradise,Other Homicide,2.00,0.00,2.00,0.00,0.00,8.00,0.00,8.00,0.00,0.00
+Surfers Paradise,Attempted Murder,2.00,0.00,2.00,0.00,0.00,8.00,0.00,8.00,0.00,0.00
+Surfers Paradise,Conspiracy to Murder,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Surfers Paradise,Manslaughter (excl. by driving),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Surfers Paradise,Driving Causing Death,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Surfers Paradise,Assault,460.00,470.00,396.00,363.00,390.00,1869.00,1904.00,1601.00,1460.00,1562.00
+Surfers Paradise,Grievous Assault,38.00,38.00,24.00,23.00,21.00,154.00,154.00,97.00,93.00,84.00
+Surfers Paradise,Serious Assault,188.00,237.00,212.00,175.00,181.00,764.00,960.00,857.00,704.00,725.00
+Surfers Paradise,Serious Assault (Other),33.00,25.00,32.00,29.00,56.00,134.00,101.00,129.00,117.00,224.00
+Surfers Paradise,Common Assault,201.00,170.00,128.00,136.00,132.00,817.00,689.00,517.00,547.00,529.00
+Surfers Paradise,Sexual Offences,46.00,50.00,49.00,41.00,39.00,187.00,203.00,198.00,165.00,156.00
+Surfers Paradise,Rape and Attempted Rape,22.00,27.00,28.00,22.00,24.00,89.00,109.00,113.00,89.00,96.00
+Surfers Paradise,Other Sexual Offences,24.00,23.00,21.00,19.00,15.00,98.00,93.00,85.00,76.00,60.00
+Surfers Paradise,Robbery,91.00,72.00,57.00,60.00,71.00,370.00,292.00,230.00,241.00,284.00
+Surfers Paradise,Armed Robbery,21.00,27.00,12.00,24.00,27.00,85.00,109.00,49.00,97.00,108.00
+Surfers Paradise,Unarmed Robbery,70.00,45.00,45.00,36.00,44.00,284.00,182.00,182.00,145.00,176.00
+Surfers Paradise,Other Offences Against the Person,45.00,36.00,43.00,39.00,42.00,183.00,146.00,174.00,157.00,168.00
+Surfers Paradise,Kidnapping &amp; Abduction etc.,8.00,2.00,6.00,5.00,5.00,33.00,8.00,24.00,20.00,20.00
+Surfers Paradise,Extortion,1.00,2.00,0.00,1.00,1.00,4.00,8.00,0.00,4.00,4.00
+Surfers Paradise,Stalking,5.00,4.00,5.00,6.00,4.00,20.00,16.00,20.00,24.00,16.00
+Surfers Paradise,Life Endangering Acts,31.00,28.00,32.00,27.00,32.00,126.00,113.00,129.00,109.00,128.00
+Surfers Paradise,Offences Against the Person,645.00,628.00,548.00,504.00,543.00,2620.00,2544.00,2215.00,2028.00,2174.00
+Surfers Paradise,Unlawful Entry,712.00,491.00,480.00,474.00,380.00,2893.00,1989.00,1940.00,1907.00,1522.00
+Surfers Paradise,Unlawful Entry With Intent - Dwelling,560.00,353.00,356.00,324.00,283.00,2275.00,1430.00,1439.00,1304.00,1133.00
+Surfers Paradise,Unlawful Entry Without Violence - Dwelling,556.00,347.00,352.00,319.00,276.00,2259.00,1406.00,1423.00,1283.00,1105.00
+Surfers Paradise,Unlawful Entry With Violence - Dwelling,4.00,6.00,4.00,5.00,7.00,16.00,24.00,16.00,20.00,28.00
+Surfers Paradise,Unlawful Entry With Intent - Shop,33.00,23.00,28.00,21.00,13.00,134.00,93.00,113.00,84.00,52.00
+Surfers Paradise,Unlawful Entry With Intent - Other,119.00,115.00,96.00,129.00,84.00,483.00,466.00,388.00,519.00,336.00
+Surfers Paradise,Arson,4.00,6.00,3.00,5.00,8.00,16.00,24.00,12.00,20.00,32.00
+Surfers Paradise,Other Property Damage,520.00,531.00,486.00,515.00,487.00,2113.00,2151.00,1965.00,2072.00,1950.00
+Surfers Paradise,Unlawful Use of Motor Vehicle,204.00,193.00,174.00,176.00,194.00,829.00,782.00,703.00,708.00,777.00
+Surfers Paradise,Other Theft (excl. Unlawful Entry),2359.00,2258.00,2217.00,2409.00,2249.00,9584.00,9146.00,8962.00,9692.00,9006.00
+Surfers Paradise,Stealing from Dwellings,137.00,156.00,172.00,213.00,192.00,557.00,632.00,695.00,857.00,769.00
+Surfers Paradise,Shop Stealing,165.00,193.00,143.00,158.00,181.00,670.00,782.00,578.00,636.00,725.00
+Surfers Paradise,Vehicles (steal from/enter with intent),628.00,479.00,574.00,500.00,493.00,2551.00,1940.00,2320.00,2012.00,1974.00
+Surfers Paradise,Other Stealing,1429.00,1430.00,1328.00,1538.00,1383.00,5806.00,5792.00,5368.00,6188.00,5538.00
+Surfers Paradise,Fraud,200.00,247.00,195.00,304.00,161.00,813.00,1000.00,788.00,1223.00,645.00
+Surfers Paradise,Fraud by Computer,33.00,33.00,13.00,20.00,10.00,134.00,134.00,53.00,80.00,40.00
+Surfers Paradise,Fraud by Cheque,8.00,24.00,8.00,2.00,3.00,33.00,97.00,32.00,8.00,12.00
+Surfers Paradise,Fraud by Credit Card,76.00,83.00,77.00,100.00,66.00,309.00,336.00,311.00,402.00,264.00
+Surfers Paradise,Identity Fraud,4.00,7.00,5.00,3.00,1.00,16.00,28.00,20.00,12.00,4.00
+Surfers Paradise,Other Fraud,79.00,100.00,92.00,179.00,81.00,321.00,405.00,372.00,720.00,324.00
+Surfers Paradise,Handling Stolen Goods,152.00,122.00,93.00,79.00,104.00,618.00,494.00,376.00,318.00,416.00
+Surfers Paradise,Possess Property Suspected Stolen,39.00,39.00,18.00,29.00,34.00,158.00,158.00,73.00,117.00,136.00
+Surfers Paradise,Receiving Stolen Property,17.00,12.00,7.00,3.00,9.00,69.00,49.00,28.00,12.00,36.00
+Surfers Paradise,Possess etc. Tainted Property,92.00,68.00,67.00,43.00,59.00,374.00,275.00,271.00,173.00,236.00
+Surfers Paradise,Other Handling Stolen Goods,4.00,3.00,1.00,4.00,2.00,16.00,12.00,4.00,16.00,8.00
+Surfers Paradise,Offences Against Property,4151.00,3848.00,3648.00,3962.00,3583.00,16864.00,15587.00,14747.00,15940.00,14348.00
+Surfers Paradise,Drug Offences,1036.00,1095.00,1172.00,1360.00,1445.00,4209.00,4435.00,4738.00,5472.00,5786.00
+Surfers Paradise,Prostitution Offences,56.00,10.00,21.00,5.00,5.00,228.00,41.00,85.00,20.00,20.00
+Surfers Paradise,Liquor (excl. Drunkenness),261.00,225.00,138.00,108.00,217.00,1060.00,911.00,558.00,435.00,869.00
+Surfers Paradise,Gaming Racing &amp; Betting Offences,0.00,1.00,0.00,0.00,0.00,0.00,4.00,0.00,0.00,0.00
+Surfers Paradise,Breach Domestic Violence Protection Order,29.00,40.00,52.00,57.00,47.00,118.00,162.00,210.00,229.00,188.00
+Surfers Paradise,Trespassing and Vagrancy,34.00,33.00,46.00,32.00,54.00,138.00,134.00,186.00,129.00,216.00
+Surfers Paradise,Weapons Act Offences,87.00,75.00,65.00,90.00,113.00,353.00,304.00,263.00,362.00,453.00
+Surfers Paradise,Good Order Offences,3580.00,3194.00,2884.00,2682.00,2651.00,14545.00,12937.00,11658.00,10791.00,10616.00
+Surfers Paradise,Stock Related Offences,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Surfers Paradise,Traffic and Related Offences,850.00,874.00,831.00,819.00,806.00,3453.00,3540.00,3359.00,3295.00,3228.00
+Surfers Paradise,Miscellaneous Offences,39.00,42.00,27.00,27.00,42.00,158.00,170.00,109.00,109.00,168.00
+Surfers Paradise,Other Offences,5972.00,5589.00,5236.00,5180.00,5380.00,24263.00,22639.00,21166.00,20841.00,21544.00

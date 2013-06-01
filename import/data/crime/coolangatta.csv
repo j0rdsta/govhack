@@ -1,0 +1,62 @@
+Surburb,Crime,2008,2009,2010,2011,2012,2008,2009,2010,2011,2012
+Coolangatta,Homicide (Murder),0.00,1.00,0.00,0.00,0.00,0.00,5.00,0.00,0.00,0.00
+Coolangatta,Other Homicide,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Coolangatta,Attempted Murder,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Coolangatta,Conspiracy to Murder,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Coolangatta,Manslaughter (excl. by driving),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Coolangatta,Driving Causing Death,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Coolangatta,Assault,137.00,119.00,96.00,107.00,124.00,629.00,547.00,438.00,480.00,547.00
+Coolangatta,Grievous Assault,10.00,7.00,10.00,12.00,8.00,46.00,32.00,46.00,54.00,35.00
+Coolangatta,Serious Assault,69.00,60.00,56.00,57.00,75.00,317.00,276.00,255.00,256.00,331.00
+Coolangatta,Serious Assault (Other),12.00,11.00,4.00,12.00,16.00,55.00,51.00,18.00,54.00,71.00
+Coolangatta,Common Assault,46.00,41.00,26.00,26.00,25.00,211.00,189.00,119.00,117.00,110.00
+Coolangatta,Sexual Offences,12.00,8.00,14.00,16.00,23.00,55.00,37.00,64.00,72.00,101.00
+Coolangatta,Rape and Attempted Rape,3.00,2.00,8.00,8.00,10.00,14.00,9.00,36.00,36.00,44.00
+Coolangatta,Other Sexual Offences,9.00,6.00,6.00,8.00,13.00,41.00,28.00,27.00,36.00,57.00
+Coolangatta,Robbery,14.00,32.00,17.00,17.00,12.00,64.00,147.00,77.00,76.00,53.00
+Coolangatta,Armed Robbery,8.00,11.00,8.00,12.00,9.00,37.00,51.00,36.00,54.00,40.00
+Coolangatta,Unarmed Robbery,6.00,21.00,9.00,5.00,3.00,28.00,97.00,41.00,22.00,13.00
+Coolangatta,Other Offences Against the Person,8.00,24.00,21.00,22.00,23.00,37.00,110.00,96.00,99.00,101.00
+Coolangatta,Kidnapping &amp; Abduction etc.,0.00,0.00,1.00,7.00,3.00,0.00,0.00,5.00,31.00,13.00
+Coolangatta,Extortion,0.00,1.00,1.00,1.00,0.00,0.00,5.00,5.00,4.00,0.00
+Coolangatta,Stalking,2.00,2.00,7.00,7.00,5.00,9.00,9.00,32.00,31.00,22.00
+Coolangatta,Life Endangering Acts,6.00,21.00,12.00,7.00,15.00,28.00,97.00,55.00,31.00,66.00
+Coolangatta,Offences Against the Person,171.00,184.00,148.00,162.00,182.00,786.00,846.00,675.00,726.00,803.00
+Coolangatta,Unlawful Entry,327.00,307.00,267.00,329.00,287.00,1502.00,1412.00,1217.00,1475.00,1266.00
+Coolangatta,Unlawful Entry With Intent - Dwelling,196.00,190.00,171.00,205.00,172.00,901.00,874.00,780.00,919.00,759.00
+Coolangatta,Unlawful Entry Without Violence - Dwelling,195.00,186.00,169.00,200.00,169.00,896.00,856.00,770.00,897.00,745.00
+Coolangatta,Unlawful Entry With Violence - Dwelling,1.00,4.00,2.00,5.00,3.00,5.00,18.00,9.00,22.00,13.00
+Coolangatta,Unlawful Entry With Intent - Shop,37.00,26.00,12.00,31.00,28.00,170.00,120.00,55.00,139.00,123.00
+Coolangatta,Unlawful Entry With Intent - Other,94.00,91.00,84.00,93.00,87.00,432.00,419.00,383.00,417.00,384.00
+Coolangatta,Arson,12.00,11.00,6.00,10.00,5.00,55.00,51.00,27.00,45.00,22.00
+Coolangatta,Other Property Damage,216.00,256.00,230.00,239.00,237.00,992.00,1178.00,1048.00,1071.00,1045.00
+Coolangatta,Unlawful Use of Motor Vehicle,143.00,178.00,103.00,126.00,125.00,657.00,819.00,470.00,565.00,551.00
+Coolangatta,Other Theft (excl. Unlawful Entry),530.00,621.00,679.00,721.00,731.00,2435.00,2856.00,3095.00,3232.00,3224.00
+Coolangatta,Stealing from Dwellings,32.00,27.00,54.00,42.00,49.00,147.00,124.00,246.00,188.00,216.00
+Coolangatta,Shop Stealing,7.00,35.00,43.00,25.00,22.00,32.00,161.00,196.00,112.00,97.00
+Coolangatta,Vehicles (steal from/enter with intent),228.00,264.00,277.00,249.00,231.00,1048.00,1214.00,1263.00,1116.00,1019.00
+Coolangatta,Other Stealing,263.00,295.00,305.00,405.00,429.00,1208.00,1357.00,1390.00,1816.00,1892.00
+Coolangatta,Fraud,88.00,121.00,115.00,61.00,89.00,404.00,557.00,524.00,273.00,393.00
+Coolangatta,Fraud by Computer,5.00,10.00,5.00,2.00,2.00,23.00,46.00,23.00,9.00,9.00
+Coolangatta,Fraud by Cheque,7.00,5.00,5.00,0.00,3.00,32.00,23.00,23.00,0.00,13.00
+Coolangatta,Fraud by Credit Card,16.00,16.00,25.00,7.00,17.00,74.00,74.00,114.00,31.00,75.00
+Coolangatta,Identity Fraud,3.00,1.00,3.00,5.00,5.00,14.00,5.00,14.00,22.00,22.00
+Coolangatta,Other Fraud,57.00,89.00,77.00,47.00,62.00,262.00,409.00,351.00,211.00,273.00
+Coolangatta,Handling Stolen Goods,34.00,36.00,44.00,44.00,43.00,156.00,166.00,201.00,197.00,190.00
+Coolangatta,Possess Property Suspected Stolen,2.00,7.00,4.00,5.00,9.00,9.00,32.00,18.00,22.00,40.00
+Coolangatta,Receiving Stolen Property,2.00,2.00,0.00,4.00,1.00,9.00,9.00,0.00,18.00,4.00
+Coolangatta,Possess etc. Tainted Property,9.00,16.00,11.00,12.00,13.00,41.00,74.00,50.00,54.00,57.00
+Coolangatta,Other Handling Stolen Goods,21.00,11.00,29.00,23.00,20.00,96.00,51.00,132.00,103.00,88.00
+Coolangatta,Offences Against Property,1350.00,1530.00,1444.00,1530.00,1517.00,6203.00,7038.00,6582.00,6859.00,6690.00
+Coolangatta,Drug Offences,191.00,204.00,307.00,208.00,218.00,878.00,938.00,1399.00,932.00,961.00
+Coolangatta,Prostitution Offences,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,4.00,0.00
+Coolangatta,Liquor (excl. Drunkenness),32.00,34.00,24.00,21.00,27.00,147.00,156.00,109.00,94.00,119.00
+Coolangatta,Gaming Racing &amp; Betting Offences,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Coolangatta,Breach Domestic Violence Protection Order,33.00,51.00,24.00,54.00,46.00,152.00,235.00,109.00,242.00,203.00
+Coolangatta,Trespassing and Vagrancy,10.00,5.00,12.00,12.00,10.00,46.00,23.00,55.00,54.00,44.00
+Coolangatta,Weapons Act Offences,19.00,16.00,28.00,11.00,15.00,87.00,74.00,128.00,49.00,66.00
+Coolangatta,Good Order Offences,512.00,689.00,581.00,433.00,372.00,2353.00,3169.00,2648.00,1941.00,1641.00
+Coolangatta,Stock Related Offences,2.00,0.00,0.00,0.00,0.00,9.00,0.00,0.00,0.00,0.00
+Coolangatta,Traffic and Related Offences,281.00,326.00,253.00,235.00,214.00,1291.00,1500.00,1153.00,1054.00,944.00
+Coolangatta,Miscellaneous Offences,3.00,8.00,6.00,7.00,11.00,14.00,37.00,27.00,31.00,49.00
+Coolangatta,Other Offences,1083.00,1333.00,1235.00,982.00,913.00,4976.00,6132.00,5630.00,4402.00,4026.00

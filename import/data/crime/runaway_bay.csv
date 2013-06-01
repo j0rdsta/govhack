@@ -1,0 +1,62 @@
+Suburb,Crime,2008,2009,2010,2011,2012,2008,2009,2010,2011,2012
+Runaway Bay,Homicide (Murder),1,1,0,0,0,3,3,0,0,0
+Runaway Bay,Other Homicide,2,1,0,1,1,6,3,0,3,3
+Runaway Bay,Attempted Murder,2,1,0,1,0,6,3,0,3,0
+Runaway Bay,Conspiracy to Murder,0,0,0,0,0,0,0,0,0,0
+Runaway Bay,Manslaughter (excl. by driving),0,0,0,0,0,0,0,0,0,0
+Runaway Bay,Driving Causing Death,0,0,0,0,1,0,0,0,0,3
+Runaway Bay,Assault,94,65,81,58,88,277,188,233,165,249
+Runaway Bay,Grievous Assault,10,6,4,2,3,29,17,12,6,8
+Runaway Bay,Serious Assault,42,30,35,33,47,124,87,101,94,133
+Runaway Bay,Serious Assault (Other),7,5,5,7,8,21,14,14,20,23
+Runaway Bay,Common Assault,35,24,37,16,30,103,70,106,46,85
+Runaway Bay,Sexual Offences,12,11,14,17,16,35,32,40,48,45
+Runaway Bay,Rape and Attempted Rape,3,2,6,3,6,9,6,17,9,17
+Runaway Bay,Other Sexual Offences,9,9,8,14,10,26,26,23,40,28
+Runaway Bay,Robbery,8,18,9,10,11,24,52,26,29,31
+Runaway Bay,Armed Robbery,6,10,6,4,9,18,29,17,11,25
+Runaway Bay,Unarmed Robbery,2,8,3,6,2,6,23,9,17,6
+Runaway Bay,Other Offences Against the Person,21,27,25,19,21,62,78,72,54,59
+Runaway Bay,Kidnapping &amp; Abduction etc.,1,0,2,3,2,3,0,6,9,6
+Runaway Bay,Extortion,2,2,1,0,1,6,6,3,0,3
+Runaway Bay,Stalking,2,4,5,3,3,6,12,14,9,8
+Runaway Bay,Life Endangering Acts,16,21,17,13,15,47,61,49,37,42
+Runaway Bay,Offences Against the Person,138,123,129,105,137,406,357,371,299,387
+Runaway Bay,Unlawful Entry,436,263,238,212,312,1283,763,685,605,882
+Runaway Bay,Unlawful Entry With Intent - Dwelling,310,164,126,113,212,912,476,362,322,600
+Runaway Bay,Unlawful Entry Without Violence - Dwelling,303,160,125,111,206,892,464,360,317,583
+Runaway Bay,Unlawful Entry With Violence - Dwelling,7,4,1,2,6,21,12,3,6,17
+Runaway Bay,Unlawful Entry With Intent - Shop,40,22,30,23,32,118,64,86,66,91
+Runaway Bay,Unlawful Entry With Intent - Other,86,77,82,76,68,253,223,236,217,192
+Runaway Bay,Arson,5,4,9,13,6,15,12,26,37,17
+Runaway Bay,Other Property Damage,254,208,220,223,214,747,603,633,636,605
+Runaway Bay,Unlawful Use of Motor Vehicle,133,99,67,100,112,391,287,193,285,317
+Runaway Bay,Other Theft (excl. Unlawful Entry),698,732,696,759,712,2054,2122,2002,2165,2014
+Runaway Bay,Stealing from Dwellings,39,43,37,60,39,115,125,106,171,110
+Runaway Bay,Shop Stealing,132,200,194,123,120,388,580,558,351,339
+Runaway Bay,Vehicles (steal from/enter with intent),238,217,256,287,270,700,629,736,819,764
+Runaway Bay,Other Stealing,289,272,209,289,283,850,789,601,824,800
+Runaway Bay,Fraud,151,338,107,139,114,444,980,308,396,322
+Runaway Bay,Fraud by Computer,7,16,5,4,4,21,46,14,11,11
+Runaway Bay,Fraud by Cheque,3,15,1,16,3,9,43,3,46,8
+Runaway Bay,Fraud by Credit Card,31,57,29,49,57,91,165,83,140,161
+Runaway Bay,Identity Fraud,4,3,6,1,4,12,9,17,3,11
+Runaway Bay,Other Fraud,106,247,66,69,46,312,716,190,197,130
+Runaway Bay,Handling Stolen Goods,30,27,29,37,29,88,78,83,106,82
+Runaway Bay,Possess Property Suspected Stolen,7,6,3,14,11,21,17,9,40,31
+Runaway Bay,Receiving Stolen Property,3,1,0,3,3,9,3,0,9,8
+Runaway Bay,Possess etc. Tainted Property,19,19,26,17,14,56,55,75,48,40
+Runaway Bay,Other Handling Stolen Goods,1,1,0,3,1,3,3,0,9,3
+Runaway Bay,Offences Against Property,1707,1671,1366,1483,1499,5023,4845,3930,4230,4240
+Runaway Bay,Drug Offences,159,228,181,203,272,468,661,521,579,769
+Runaway Bay,Prostitution Offences,0,0,0,0,1,0,0,0,0,3
+Runaway Bay,Liquor (excl. Drunkenness),0,1,3,0,3,0,3,9,0,8
+Runaway Bay,Gaming Racing &amp; Betting Offences,0,0,0,0,0,0,0,0,0,0
+Runaway Bay,Breach Domestic Violence Protection Order,44,37,54,58,47,129,107,155,165,133
+Runaway Bay,Trespassing and Vagrancy,10,9,13,21,9,29,26,37,60,25
+Runaway Bay,Weapons Act Offences,15,18,10,23,24,44,52,29,66,68
+Runaway Bay,Good Order Offences,94,78,84,72,88,277,226,242,205,249
+Runaway Bay,Stock Related Offences,0,0,0,0,0,0,0,0,0,0
+Runaway Bay,Traffic and Related Offences,297,249,237,229,264,874,722,682,653,747
+Runaway Bay,Miscellaneous Offences,11,7,11,9,6,32,20,32,26,17
+Runaway Bay,Other Offences,630,627,593,615,714,1854,1818,1706,1754,2019

@@ -1,0 +1,73 @@
+Suburb,Crime,2008,2009,2010,2011,2012,2008,2009,2010,2011,2012
+Mudgeeraba,Homicide (Murder),1.00,0.00,0.00,0.00,0.00,3.00,0.00,0.00,0.00,0.00
+Mudgeeraba,Other Homicide,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,2.00
+Mudgeeraba,Attempted Murder,0.00,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,2.00
+Mudgeeraba,Conspiracy to Murder,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Mudgeeraba,Manslaughter (excl. by driving),0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Mudgeeraba,Driving Causing Death,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Mudgeeraba,Assault,54.00,55.00,53.00,65.00,50.00,141.00,141.00,134.00,162.00,124.00
+Mudgeeraba,Grievous Assault,2.00,1.00,2.00,5.00,1.00,5.00,3.00,5.00,12.00,2.00
+Mudgeeraba,Serious Assault,30.00,32.00,31.00,29.00,26.00,78.00,82.00,78.00,72.00,64.00
+Mudgeeraba,Serious Assault (Other),2.00,6.00,4.00,12.00,6.00,5.00,15.00,10.00,30.00,15.00
+Mudgeeraba,Common Assault,20.00,16.00,16.00,19.00,17.00,52.00,41.00,40.00,47.00,42.00
+Mudgeeraba,Sexual Offences,18.00,40.00,8.00,18.00,13.00,47.00,103.00,20.00,45.00,32.00
+Mudgeeraba,Rape and Attempted Rape,7.00,25.00,2.00,7.00,2.00,18.00,64.00,5.00,17.00,5.00
+Mudgeeraba,Other Sexual Offences,11.00,15.00,6.00,11.00,11.00,29.00,39.00,15.00,27.00,27.00
+Mudgeeraba,Robbery,8.00,13.00,9.00,11.00,8.00,21.00,33.00,23.00,27.00,20.00
+Mudgeeraba,Armed Robbery,5.00,12.00,7.00,7.00,5.00,13.00,31.00,18.00,17.00,12.00
+Mudgeeraba,Unarmed Robbery,3.00,1.00,2.00,4.00,3.00,8.00,3.00,5.00,10.00,7.00
+Mudgeeraba,Other Offences Against the Person,19.00,9.00,11.00,13.00,23.00,50.00,23.00,28.00,32.00,57.00
+Mudgeeraba,Kidnapping & Abduction etc.,1.00,0.00,1.00,3.00,2.00,3.00,0.00,3.00,7.00,5.00
+Mudgeeraba,Extortion,0.00,0.00,0.00,1.00,0.00,0.00,0.00,0.00,2.00,0.00
+Mudgeeraba,Stalking,3.00,4.00,1.00,3.00,6.00,8.00,10.00,3.00,7.00,15.00
+Mudgeeraba,Life Endangering Acts,15.00,5.00,9.00,6.00,15.00,39.00,13.00,23.00,15.00,37.00
+Mudgeeraba,Offences Against the Person,100.00,117.00,81.00,107.00,95.00,261.00,300.00,205.00,267.00,235.00
+Mudgeeraba,Unlawful Entry,261.00,307.00,226.00,270.00,203.00,681.00,788.00,571.00,675.00,502.00
+Mudgeeraba,Unlawful Entry With Intent - Dwelling,188.00,198.00,140.00,183.00,134.00,491.00,508.00,354.00,457.00,331.00
+Mudgeeraba,Unlawful Entry Without Violence - Dwelling,188.00,194.00,136.00,178.00,130.00,491.00,498.00,344.00,445.00,321.00
+Mudgeeraba,Unlawful Entry With Violence - Dwelling,0.00,4.00,4.00,5.00,4.00,0.00,10.00,10.00,12.00,10.00
+Mudgeeraba,Unlawful Entry With Intent - Shop,8.00,15.00,11.00,24.00,9.00,21.00,39.00,28.00,60.00,22.00
+Mudgeeraba,Unlawful Entry With Intent - Other,65.00,94.00,75.00,63.00,60.00,170.00,241.00,190.00,157.00,148.00
+Mudgeeraba,Arson,13.00,12.00,12.00,15.00,12.00,34.00,31.00,30.00,37.00,30.00
+Mudgeeraba,Other Property Damage,170.00,167.00,160.00,182.00,278.00,444.00,429.00,404.00,455.00,687.00
+Mudgeeraba,Unlawful Use of Motor Vehicle,55.00,82.00,39.00,55.00,48.00,144.00,211.00,99.00,137.00,119.00
+Mudgeeraba,Other Theft (excl. Unlawful Entry),412.00,511.00,457.00,519.00,599.00,1075.00,1312.00,1155.00,1297.00,1481.00
+Mudgeeraba,Stealing from Dwellings,35.00,36.00,31.00,50.00,30.00,91.00,92.00,78.00,125.00,74.00
+Mudgeeraba,Shop Stealing,16.00,28.00,18.00,9.00,11.00,42.00,72.00,45.00,22.00,27.00
+Mudgeeraba,Vehicles (steal from/enter with intent),207.00,303.00,242.00,243.00,186.00,540.00,778.00,612.00,607.00,460.00
+Mudgeeraba,Other Stealing,154.00,144.00,166.00,217.00,372.00,402.00,370.00,419.00,542.00,920.00
+Mudgeeraba,Fraud,27.00,74.00,34.00,126.00,48.00,70.00,190.00,86.00,315.00,119.00
+Mudgeeraba,Fraud by Computer,8.00,3.00,7.00,28.00,8.00,21.00,8.00,18.00,70.00,20.00
+Mudgeeraba,Fraud by Cheque,0.00,13.00,0.00,4.00,0.00,0.00,33.00,0.00,10.00,0.00
+Mudgeeraba,Fraud by Credit Card,6.00,5.00,2.00,16.00,12.00,16.00,13.00,5.00,40.00,30.00
+Mudgeeraba,Identity Fraud,1.00,2.00,2.00,2.00,3.00,3.00,5.00,5.00,5.00,7.00
+Mudgeeraba,Other Fraud,12.00,51.00,23.00,76.00,25.00,31.00,131.00,58.00,190.00,62.00
+Mudgeeraba,Handling Stolen Goods,11.00,15.00,8.00,11.00,19.00,29.00,39.00,20.00,27.00,47.00
+Mudgeeraba,Possess Property Suspected Stolen,5.00,3.00,3.00,2.00,7.00,13.00,8.00,8.00,5.00,17.00
+Mudgeeraba,Receiving Stolen Property,1.00,0.00,1.00,1.00,4.00,3.00,0.00,3.00,2.00,10.00
+Mudgeeraba,Possess etc. Tainted Property,5.00,10.00,1.00,4.00,7.00,13.00,26.00,3.00,10.00,17.00
+Mudgeeraba,Other Handling Stolen Goods,0.00,2.00,3.00,4.00,1.00,0.00,5.00,8.00,10.00,2.00
+Mudgeeraba,Offences Against Property,949.00,1168.00,936.00,1178.00,1207.00,2476.00,2998.00,2365.00,2944.00,2985.00
+Mudgeeraba,Drug Offences,138.00,141.00,207.00,140.00,211.00,360.00,362.00,523.00,350.00,522.00
+Mudgeeraba,Prostitution Offences,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Mudgeeraba,Liquor (excl. Drunkenness),5.00,4.00,0.00,0.00,3.00,13.00,10.00,0.00,0.00,7.00
+Mudgeeraba,Gaming Racing & Betting Offences,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Mudgeeraba,Breach Domestic Violence Protection Order,36.00,45.00,47.00,54.00,49.00,94.00,116.00,119.00,135.00,121.00
+Mudgeeraba,Trespassing and Vagrancy,10.00,6.00,11.00,4.00,10.00,26.00,15.00,28.00,10.00,25.00
+Mudgeeraba,Weapons Act Offences,11.00,27.00,18.00,16.00,34.00,29.00,69.00,45.00,40.00,84.00
+Mudgeeraba,Good Order Offences,71.00,56.00,42.00,49.00,42.00,185.00,144.00,106.00,122.00,104.00
+Mudgeeraba,Stock Related Offences,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+Mudgeeraba,Traffic and Related Offences,162.00,208.00,272.00,250.00,241.00,423.00,534.00,687.00,625.00,596.00
+Mudgeeraba,Miscellaneous Offences,3.00,9.00,8.00,6.00,11.00,8.00,23.00,20.00,15.00,27.00
+Mudgeeraba,Other Offences,436.00,496.00,605.00,519.00,601.00,1138.00,1273.00,1529.00,1297.00,1486.00
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+Notes:,,,,,,,,,,,
+1. This data are preliminary and may be subject to change.,,,,,,,,,,,
+"2. Rates are expressed per 100,000 persons and are calculated based on the estimated residential population as at 30 June of each year.",,,,,,,,,,,
+¸ The State of Queensland (Queensland Police Service)[02MAY2013],,,,,,,,,,,
+,,,,,,,,,,,
+"This document is licensed under a Creative Commons Attribution 2.5 Australia Licence. To attribute this material, cite the Queensland Police Service.",,,,,,,,,,,

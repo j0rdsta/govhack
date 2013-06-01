@@ -1,0 +1,62 @@
+Suburb,Crime,2008,2009,2010,2011,2012,2008,2009,2010,2011,2012
+Robina,Homicide (Murder),0,4,1,3,0,0,11,3,8,0
+Robina,Other Homicide,1,1,0,1,1,3,3,0,3,3
+Robina,Attempted Murder,0,0,0,1,1,0,0,0,3,3
+Robina,Conspiracy to Murder,0,0,0,0,0,0,0,0,0,0
+Robina,Manslaughter (excl. by driving),0,0,0,0,0,0,0,0,0,0
+Robina,Driving Causing Death,1,1,0,0,0,3,3,0,0,0
+Robina,Assault,71,98,108,67,63,203,277,305,188,175
+Robina,Grievous Assault,2,5,4,6,5,6,14,11,17,14
+Robina,Serious Assault,38,49,49,29,29,109,139,139,81,81
+Robina,Serious Assault (Other),10,7,15,11,3,29,20,42,31,8
+Robina,Common Assault,21,37,40,21,26,60,105,113,59,72
+Robina,Sexual Offences,20,8,15,13,6,57,23,42,36,17
+Robina,Rape and Attempted Rape,7,1,4,1,1,20,3,11,3,3
+Robina,Other Sexual Offences,13,7,11,12,5,37,20,31,34,14
+Robina,Robbery,19,15,40,14,19,54,42,113,39,53
+Robina,Armed Robbery,10,10,13,5,10,29,28,37,14,28
+Robina,Unarmed Robbery,9,5,27,9,9,26,14,76,25,25
+Robina,Other Offences Against the Person,19,20,32,16,23,54,57,90,45,64
+Robina,Kidnapping &amp; Abduction etc.,2,1,2,0,0,6,3,6,0,0
+Robina,Extortion,0,3,3,1,0,0,8,8,3,0
+Robina,Stalking,1,3,4,2,4,3,8,11,6,11
+Robina,Life Endangering Acts,16,13,23,13,19,46,37,65,36,53
+Robina,Offences Against the Person,130,146,196,114,112,373,413,554,320,311
+Robina,Unlawful Entry,361,411,347,362,307,1035,1164,981,1015,853
+Robina,Unlawful Entry With Intent - Dwelling,167,170,191,178,184,479,481,540,499,511
+Robina,Unlawful Entry Without Violence - Dwelling,163,167,190,173,181,467,473,537,485,503
+Robina,Unlawful Entry With Violence - Dwelling,4,3,1,5,3,11,8,3,14,8
+Robina,Unlawful Entry With Intent - Shop,44,61,54,48,23,126,173,153,135,64
+Robina,Unlawful Entry With Intent - Other,150,180,102,136,100,430,510,288,381,278
+Robina,Arson,23,19,11,16,12,66,54,31,45,33
+Robina,Other Property Damage,288,279,251,309,304,825,790,710,866,845
+Robina,Unlawful Use of Motor Vehicle,131,126,86,126,102,375,357,243,353,283
+Robina,Other Theft (excl. Unlawful Entry),772,1010,1158,1360,1263,2213,2859,3275,3812,3509
+Robina,Stealing from Dwellings,32,44,53,63,54,92,125,150,177,150
+Robina,Shop Stealing,136,320,332,303,235,390,906,939,849,653
+Robina,Vehicles (steal from/enter with intent),315,294,344,348,313,903,832,973,975,870
+Robina,Other Stealing,289,352,429,646,661,828,996,1213,1811,1836
+Robina,Fraud,163,195,327,178,166,467,552,925,499,461
+Robina,Fraud by Computer,11,13,8,7,3,32,37,23,20,8
+Robina,Fraud by Cheque,17,14,3,8,4,49,40,8,22,11
+Robina,Fraud by Credit Card,25,53,21,67,41,72,150,59,188,114
+Robina,Identity Fraud,4,4,6,15,6,11,11,17,42,17
+Robina,Other Fraud,106,111,289,81,112,304,314,817,227,311
+Robina,Handling Stolen Goods,21,42,22,28,29,60,119,62,78,81
+Robina,Possess Property Suspected Stolen,6,18,7,7,7,17,51,20,20,19
+Robina,Receiving Stolen Property,6,9,4,1,2,17,25,11,3,6
+Robina,Possess etc. Tainted Property,6,11,8,16,19,17,31,23,45,53
+Robina,Other Handling Stolen Goods,3,4,3,4,1,9,11,8,11,3
+Robina,Offences Against Property,1759,2082,2202,2379,2183,5041,5894,6227,6668,6065
+Robina,Drug Offences,139,208,214,424,274,398,589,605,1188,761
+Robina,Prostitution Offences,1,0,0,0,0,3,0,0,0,0
+Robina,Liquor (excl. Drunkenness),5,5,2,2,5,14,14,6,6,14
+Robina,Gaming Racing &amp; Betting Offences,0,0,0,0,0,0,0,0,0,0
+Robina,Breach Domestic Violence Protection Order,17,33,36,45,38,49,93,102,126,106
+Robina,Trespassing and Vagrancy,17,14,14,12,24,49,40,40,34,67
+Robina,Weapons Act Offences,15,27,24,26,27,43,76,68,73,75
+Robina,Good Order Offences,115,104,132,120,140,330,294,373,336,389
+Robina,Stock Related Offences,0,0,0,0,0,0,0,0,0,0
+Robina,Traffic and Related Offences,204,301,239,226,241,585,852,676,633,670
+Robina,Miscellaneous Offences,26,25,25,15,21,75,71,71,42,58
+Robina,Other Offences,539,717,686,870,770,1545,2030,1940,2438,2139

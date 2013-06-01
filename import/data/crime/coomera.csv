@@ -1,0 +1,62 @@
+Suburb,Crime,2008,2009,2010,2011,2012,2008,2009,2010,2011,2012
+Coomera,Homicide (Murder),0,0,2,0,0,0,0,3,0,0
+Coomera,Other Homicide,2,3,1,1,2,3,4,1,1,3
+Coomera,Attempted Murder,1,1,1,1,2,2,1,1,1,3
+Coomera,Conspiracy to Murder,0,1,0,0,0,0,1,0,0,0
+Coomera,Manslaughter (excl. by driving),0,0,0,0,0,0,0,0,0,0
+Coomera,Driving Causing Death,1,1,0,0,0,2,1,0,0,0
+Coomera,Assault,171,239,206,178,200,268,352,291,242,263
+Coomera,Grievous Assault,6,14,10,6,10,9,21,14,8,13
+Coomera,Serious Assault,85,112,105,74,78,133,165,148,101,102
+Coomera,Serious Assault (Other),13,17,20,17,28,20,25,28,23,37
+Coomera,Common Assault,67,96,71,81,84,105,141,100,110,110
+Coomera,Sexual Offences,85,44,50,29,39,133,65,71,39,51
+Coomera,Rape and Attempted Rape,7,5,14,11,8,11,7,20,15,11
+Coomera,Other Sexual Offences,78,39,36,18,31,122,57,51,25,41
+Coomera,Robbery,17,18,13,22,32,27,26,18,30,42
+Coomera,Armed Robbery,9,12,7,21,24,14,18,10,29,32
+Coomera,Unarmed Robbery,8,6,6,1,8,13,9,8,1,11
+Coomera,Other Offences Against the Person,37,54,44,44,67,58,79,62,60,88
+Coomera,Kidnapping & Abduction etc.,2,5,2,6,6,3,7,3,8,8
+Coomera,Extortion,0,2,2,1,4,0,3,3,1,5
+Coomera,Stalking,10,3,10,4,13,16,4,14,5,17
+Coomera,Life Endangering Acts,25,44,30,33,44,39,65,42,45,58
+Coomera,Offences Against the Person,312,358,316,274,340,488,527,447,373,447
+Coomera,Unlawful Entry,689,716,613,755,957,1079,1053,866,1028,1257
+Coomera,Unlawful Entry With Intent - Dwelling,472,387,316,466,677,739,569,447,635,889
+Coomera,Unlawful Entry Without Violence - Dwelling,469,380,312,459,663,734,559,441,625,871
+Coomera,Unlawful Entry With Violence - Dwelling,3,7,4,7,14,5,10,6,10,18
+Coomera,Unlawful Entry With Intent - Shop,53,80,79,80,114,83,118,112,109,150
+Coomera,Unlawful Entry With Intent - Other,164,249,218,209,166,257,366,308,285,218
+Coomera,Arson,30,41,23,34,40,47,60,33,46,53
+Coomera,Other Property Damage,477,458,528,503,794,747,674,746,685,1043
+Coomera,Unlawful Use of Motor Vehicle,180,196,174,257,295,282,288,246,350,388
+Coomera,Other Theft (excl. Unlawful Entry),1061,1355,1478,2034,2592,1661,1993,2089,2770,3405
+Coomera,Stealing from Dwellings,50,68,92,105,127,78,100,130,143,167
+Coomera,Shop Stealing,79,123,164,154,156,124,181,232,210,205
+Coomera,Vehicles (steal from/enter with intent),414,553,620,808,774,648,813,876,1100,1017
+Coomera,Other Stealing,518,611,602,967,1535,811,899,851,1317,2017
+Coomera,Fraud,206,194,158,271,142,322,285,223,369,187
+Coomera,Fraud by Computer,22,12,9,37,7,34,18,13,50,9
+Coomera,Fraud by Cheque,11,5,5,3,3,17,7,7,4,4
+Coomera,Fraud by Credit Card,54,79,77,45,40,85,116,109,61,53
+Coomera,Identity Fraud,20,8,7,4,7,31,12,10,5,9
+Coomera,Other Fraud,99,90,60,182,85,155,132,85,248,112
+Coomera,Handling Stolen Goods,43,47,43,64,71,67,69,61,87,93
+Coomera,Possess Property Suspected Stolen,6,5,17,20,15,9,7,24,27,20
+Coomera,Receiving Stolen Property,9,9,3,5,10,14,13,4,7,13
+Coomera,Possess etc. Tainted Property,24,32,23,35,41,38,47,33,48,54
+Coomera,Other Handling Stolen Goods,4,1,0,4,5,6,1,0,5,7
+Coomera,Offences Against Property,2686,3007,3017,3918,4891,4205,4423,4263,5335,6426
+Coomera,Drug Offences,299,384,434,596,689,468,565,613,812,905
+Coomera,Prostitution Offences,0,0,0,0,0,0,0,0,0,0
+Coomera,Liquor (excl. Drunkenness),8,1,7,4,5,13,1,10,5,7
+Coomera,Gaming Racing & Betting Offences,0,0,0,0,0,0,0,0,0,0
+Coomera,Breach Domestic Violence Protection Order,63,83,73,108,98,99,122,103,147,129
+Coomera,Trespassing and Vagrancy,50,57,55,37,32,78,84,78,50,42
+Coomera,Weapons Act Offences,34,52,51,80,62,53,76,72,109,81
+Coomera,Good Order Offences,148,119,140,188,260,232,175,198,256,342
+Coomera,Stock Related Offences,0,0,0,0,0,0,0,0,0,0
+Coomera,Traffic and Related Offences,618,645,608,667,747,967,949,859,908,981
+Coomera,Miscellaneous Offences,22,17,40,28,18,34,25,57,38,24
+Coomera,Other Offences,1242,1358,1408,1708,1911,1944,1998,1990,2326,2511
