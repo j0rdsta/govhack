@@ -1,4 +1,4 @@
-<div id="feature" style="padding-bottom: 30px;">
+<div id="feature">
 	<div class="row">
 		<div class="large-4 columns header">
 			<h1>Welcome</h1>

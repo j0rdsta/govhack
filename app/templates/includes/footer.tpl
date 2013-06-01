@@ -56,18 +56,24 @@
 	<script src="javascripts/graph.js"></script>
 	<!-- /D3 -->
 
+	{literal}
 	<script>
 		$(function() {
+			$("#search").change(function(){
+				var varname = $(this).val();
+			});
+
 			$.ajax({
-				url:"http://govhack.atdw.com.au/products?",
+				url:"http://govhack.atdw.com.au/productsearchservice.svc/products?key=278965474541&term=varname",
 				method:"GET",
 				data: {
 					key: 278965474541,
-					// term: {$varname}
+					term: varname
 				}
 			});
 		})
 	</script>
+	{/literal}
 
 </body>
 </html>
