@@ -1,4 +1,4 @@
-<body>
+<body {if $title eq "FullStop"}class='home'{/if}>
 
 	<!-- Navigation -->
 	<div class="contain-to-grid">
@@ -15,27 +15,23 @@
 				<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
 			</ul>
 
-			<section class="top-bar-section">
-				<!-- Left Nav Section -->
-				<ul class="left">
-					<li class="divider"></li>
-					<li><a href="#">Suburbs</a>
-					</li>
-				</ul>
-				<!-- Right Nav Section -->
-				<ul class="right">
-					<li class="divider"></li>
-					<li class="has-form">
-						<a class="button" href="#">Review</a>
-					</li>
-				</ul>
-			</section>
+			{if $title != "FullStop"}
+				<section class="top-bar-section">
+					<!-- Right Nav Section -->
+					<ul class="right">
+						<li class="divider"></li>
+						<li class="has-form">
+							<a class="button" href="#">Review</a>
+						</li>
+					</ul>
+				</section>
+			{/if}
 		</nav>
 	</div>
 
 	<!-- End Top Bar -->
 
-	{include "feature.tpl"}
+	{if $title eq "FullStop"}{include "feature.tpl"}{/if}
 
 	<!-- Search -->
 	<div class="row">
