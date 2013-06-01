@@ -8,7 +8,7 @@
 
 <div class="row">
 	<div class="large-12 columns">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quaerat, deserunt possimus eligendi voluptatum ab suscipit harum magni ut quasi at placeat veniam exercitationem debitis fuga sequi natus ullam ratione?</p>
+		<p>The best tool for finding great destinations to make your Gold Coast experience a fun and safe one.</p>
 		<hr>
 	</div>
 </div>
