@@ -33,9 +33,10 @@ class Suburbs extends CI_Controller {
 
 	function Search() {
 		$query = isset($_GET['query'])? $_GET['query'] : '';
+
 		$this->smartylib->assign('results', $this->Suburb->Search($query));
 		$this->smartylib->assign('query', $query);
-		$this->smartylib->display('suburbs/search.tpl');
+		$this->smartylib->display('suburbs/search.tpl', $query);
 	}
 
 	function Edit($suburb_id = null) {
