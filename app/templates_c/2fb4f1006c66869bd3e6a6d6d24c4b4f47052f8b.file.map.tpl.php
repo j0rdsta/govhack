@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-06-01 05:00:44
+<?php /* Smarty version Smarty-3.1.13, created on 2013-06-01 05:20:30
          compiled from ".\templates\map.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1698651a963dc7da1c9-98508353%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2fb4f1006c66869bd3e6a6d6d24c4b4f47052f8b' => 
     array (
       0 => '.\\templates\\map.tpl',
-      1 => 1370055642,
+      1 => 1370056829,
       2 => 'file',
     ),
   ),
@@ -15,59 +15,18 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.13',
   'unifunc' => 'content_51a963dc821590_88189522',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51a963dc821590_88189522')) {function content_51a963dc821590_88189522($_smarty_tpl) {?>
-<!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<?php if ($_valid && !is_callable('content_51a963dc821590_88189522')) {function content_51a963dc821590_88189522($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("includes/head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
-<head>
-	<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Full Stop - Individual Listing</title>
+<?php echo $_smarty_tpl->getSubTemplate ("includes/nav.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
-  <link rel="stylesheet" href="stylesheets/normalize.css" />
 
-  <link rel="stylesheet" href="stylesheets/app.css" />
-
-  <link rel="stylesheet" href="stylesheets/nv.d3.css" />
-
-  <script src="javascripts/vendor/custom.modernizr.js"></script>
-
-</head>
 <body>
 
-	<!-- Navigation -->
-	<div class="contain-to-grid">
-		<nav class="top-bar">
-			<ul class="title-area">
-				<!-- Title Area -->
-				<li class="name">
-					<h1>
-						<a href="#">
-							Full Stop
-						</a>
-					</h1>
-				</li>
-				<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-			</ul>
 
-			<section class="top-bar-section">
-				<!-- Right Nav Section -->
-				<ul class="right">
-					<li class="divider"></li>
-					<li class="has-form">
-						<a class="button" href="#">Review</a>
-					</li>
-				</ul>
-			</section>
-		</nav>
-	</div>
-
-	<!-- End Top Bar -->
 
 	<!-- Header -->
 	<div class="row">

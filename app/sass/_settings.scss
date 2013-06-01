@@ -39,7 +39,7 @@ $em-base: 16px !default;
 
 //// Colors
 
-// $primary-color: #2ba6cb;
+$primary-color: #ca345e;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -51,7 +51,7 @@ $em-base: 16px !default;
 
 //// Inset shadow shiny edges and depressions.
 
-// $shiny-edge-size: 0 1px 0;
+$shiny-edge-size: 0;
 // $shiny-edge-color: rgba(#fff, .5);
 // $shiny-edge-active-color: rgba(#000, .2);
 
@@ -1143,11 +1143,11 @@ $em-base: 16px !default;
 
 //// Background color for the top bar
 
-// $topbar-bg: #111;
+$topbar-bg: $primary-color;
 
 //// Height and margin
 
-// $topbar-height: 45px;
+// $topbar-height: 65px;
 // $topbar-margin-bottom: emCalc(30px);
 
 //// Input height for top bar

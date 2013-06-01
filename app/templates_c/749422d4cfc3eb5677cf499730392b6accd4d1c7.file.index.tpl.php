@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2013-06-01 04:51:59
+<?php /* Smarty version Smarty-3.1.13, created on 2013-06-01 05:18:21
          compiled from ".\templates\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3186751a960196b0c34-46223951%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '749422d4cfc3eb5677cf499730392b6accd4d1c7' => 
     array (
       0 => '.\\templates\\index.tpl',
-      1 => 1370055035,
+      1 => 1370056645,
       2 => 'file',
     ),
   ),
@@ -19,55 +19,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_51a9601996b535_66003847',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51a9601996b535_66003847')) {function content_51a9601996b535_66003847($_smarty_tpl) {?>
-<!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<?php if ($_valid && !is_callable('content_51a9601996b535_66003847')) {function content_51a9601996b535_66003847($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ("includes/head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
-<head>
-	<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Full Stop - Home</title>
+<?php echo $_smarty_tpl->getSubTemplate ("includes/nav.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
 
-  <link rel="stylesheet" href="stylesheets/normalize.css" />
-
-  <link rel="stylesheet" href="stylesheets/app.css" />
-
-  <script src="javascripts/vendor/custom.modernizr.js"></script>
-</head>
-<body>
-
-	<!-- Navigation -->
-	<div class="contain-to-grid">
-		<nav class="top-bar">
-			<ul class="title-area">
-				<!-- Title Area -->
-				<li class="name">
-					<h1>
-						<a href="#">
-							Full Stop
-						</a>
-					</h1>
-				</li>
-			</ul>
-		</nav>
-	</div>
-
-	<!-- End Top Bar -->
-
-	<!-- Search -->
-	<div class="row">
-		<div class="row">
-			<div class="small-2 columns">
-				<label for="search" class="right inline">Search for a location</label>
-			</div>
-			<div class="small-10 columns">
-				<input type="text" id="search" placeholder="eg. Varsity Lakes">
-			</div>
-		</div>
-	</div>
-	<hr>
-	<!-- End Search -->
 
 	<!-- Item -->
 	<a href="#">
