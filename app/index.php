@@ -1,11 +1,5 @@
 <?php
-	// require "db_defs.php";
-	require('../../smarty/libs/Smarty.class.php');
-
-
-
+	require('includes/db_defs.php');
 	$smarty = new smarty();
 	$smarty->display("index.tpl");
-
-
 ?>

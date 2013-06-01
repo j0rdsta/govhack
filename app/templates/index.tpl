@@ -1,52 +1,5 @@
-
-<!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
-<head>
-	<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Full Stop - Home</title>
-
-  <link rel="stylesheet" href="stylesheets/normalize.css" />
-
-  <link rel="stylesheet" href="stylesheets/app.css" />
-
-  <script src="javascripts/vendor/custom.modernizr.js"></script>
-</head>
-<body>
-
-	<!-- Navigation -->
-	<div class="contain-to-grid">
-		<nav class="top-bar">
-			<ul class="title-area">
-				<!-- Title Area -->
-				<li class="name">
-					<h1>
-						<a href="#">
-							Full Stop
-						</a>
-					</h1>
-				</li>
-			</ul>
-		</nav>
-	</div>
-
-	<!-- End Top Bar -->
-
-	<!-- Search -->
-	<div class="row">
-		<div class="row">
-			<div class="small-2 columns">
-				<label for="search" class="right inline">Search for a location</label>
-			</div>
-			<div class="small-10 columns">
-				<input type="text" id="search" placeholder="eg. Varsity Lakes">
-			</div>
-		</div>
-	</div>
-	<hr>
-	<!-- End Search -->
+{include "includes/head.tpl"}
+{include "includes/nav.tpl"}
 
 	<!-- Item -->
 	<a href="#">

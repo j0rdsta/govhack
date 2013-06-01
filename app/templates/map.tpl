@@ -1,52 +1,9 @@
+{include "includes/head.tpl"}
+{include "includes/nav.tpl"}
 
-<!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
-<head>
-	<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Full Stop - Individual Listing</title>
-
-  <link rel="stylesheet" href="stylesheets/normalize.css" />
-
-  <link rel="stylesheet" href="stylesheets/app.css" />
-
-  <link rel="stylesheet" href="stylesheets/nv.d3.css" />
-
-  <script src="javascripts/vendor/custom.modernizr.js"></script>
-
-</head>
 <body>
 
-	<!-- Navigation -->
-	<div class="contain-to-grid">
-		<nav class="top-bar">
-			<ul class="title-area">
-				<!-- Title Area -->
-				<li class="name">
-					<h1>
-						<a href="#">
-							Full Stop
-						</a>
-					</h1>
-				</li>
-				<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-			</ul>
 
-			<section class="top-bar-section">
-				<!-- Right Nav Section -->
-				<ul class="right">
-					<li class="divider"></li>
-					<li class="has-form">
-						<a class="button" href="#">Review</a>
-					</li>
-				</ul>
-			</section>
-		</nav>
-	</div>
-
-	<!-- End Top Bar -->
 
 	<!-- Header -->
 	<div class="row">
