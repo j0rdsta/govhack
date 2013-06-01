@@ -21,14 +21,14 @@
 		<h2>Graphs</h2>
 
 		<h5>Crime</h5>
-		<div id="chart">
+		<div id="crime-chart">
 			<svg></svg>
 		</div>
 
 		<hr>
 
-		<h5>Growth</h5>
-		<div id="chart2">
+		<h5>Population</h5>
+		<div id="population-chart">
 			<svg></svg>
 		</div>
 	</div>
