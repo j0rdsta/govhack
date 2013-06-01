@@ -1,4 +1,3 @@
-<pre>
 <?php
 function dbconnect(){
 	include('dbconfig.php');
@@ -62,6 +61,56 @@ function import_population_csv($filename){
 	dbclose($DBLink);
 }
 
-import_population_csv('data/population_data_clean.csv');
+function import_crime_csv($filename){
+	$DBLink = dbconnect();
+	ini_set('auto_detect_line_endings',TRUE);
+
+	$handle = fopen($filename, "r");
+	$lnum = 0;
+
+	$columns;
+
+	while($row = fgetcsv($handle, 0, ",")){ // Start a loop
+		if($lnum == 0) {
+			$columns = $row;
+			$lnum++;
+			continue;// Skip first row because they are just the column headers
+		}
+
+		$suburb_name = $row[0];
+		$crime = $row[1];
+		for($i = 2; $i < count($row); $i++) {
+			$year = $columns[$i];
+			$count = $row[$i];
+
+			$q = "
+			INSERT INTO
+			data_crime
+			SET
+			`suburb_name` = '$suburb_name',
+			`crime` = '$crime',
+			`year` = '$year',
+			`count` = '$count'
+	         ";
+	        $r = mysql_query($q) or die("error in query: ".mysql_error()."<br/>$q");
+		}
+
+		$lnum++;
+	}
+	fclose($handle); // Close file
+	dbclose($DBLink);
+}
+
+//import_population_csv('data/population_data_clean.csv');
+//import_crime_csv('data/crime/broadbeach.csv');
+//import_crime_csv('data/crime/coolangatta.csv');
+//import_crime_csv('data/crime/coomera.csv');
+//import_crime_csv('data/crime/mudgeeraba.csv');
+//import_crime_csv('data/crime/nerang.csv');
+//import_crime_csv('data/crime/palm_beach.csv');
+//import_crime_csv('data/crime/robina.csv');
+//import_crime_csv('data/crime/runaway_bay.csv');
+//import_crime_csv('data/crime/southport.csv');
+//import_crime_csv('data/crime/surfers_paradise.csv');
+
 ?>
-</pre>
