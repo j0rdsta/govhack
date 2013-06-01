@@ -12,6 +12,8 @@
 
 	<link rel="stylesheet" href="/stylesheets/normalize.css" />
 
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css'>
+
 	<link rel="stylesheet" href="/stylesheets/app.css" />
 
 	<link rel="stylesheet" href="/stylesheets/nv.d3.css" />
