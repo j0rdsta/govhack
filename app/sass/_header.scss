@@ -1,5 +1,9 @@
 // Header
 
+.contain-to-grid {
+	border-bottom: 5px solid darken($primary-color, 10%);
+}
+
 .top-bar {
 	a img {
 		margin-top: 7px;
