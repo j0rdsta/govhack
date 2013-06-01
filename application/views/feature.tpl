@@ -1,7 +1,7 @@
 <div id="feature">
 	<div class="row">
 		<div class="large-4 columns header">
-			<h1>Welcome</h1>
+			<h1>Enjoy the most out of the Gold Coast</h1>
 		</div>
 	</div>
 </div>
