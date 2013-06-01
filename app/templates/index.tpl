@@ -2,7 +2,7 @@
 {include "includes/nav.tpl"}
 	{foreach $results as $result}
 	<!-- Item -->
-	<a href="#">
+	<a href="#" class="{cycle values='odd,even'}">
 		<div class="row">
 			<div class="small-2 columns">
 				<img src="{$result.image}" alt="">

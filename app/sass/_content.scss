@@ -1,5 +1,11 @@
 // Content
 
-a h5 {
-	color: inherit;
+a {
+	h5 {
+		color: inherit;
+	}
+	&.even .row {
+		background: #eee;
+	}
 }
+
