@@ -8,6 +8,8 @@
 	<meta name="viewport" content="width=device-width" />
 	<title>{$title}</title>
 
+	<link rel="shortcut icon" href="favicon.ico" />
+
 	<link rel="stylesheet" href="stylesheets/normalize.css" />
 
 	<link rel="stylesheet" href="stylesheets/app.css" />
