@@ -54,6 +54,19 @@
 
 	<script src="javascripts/graph.js"></script>
 
+	<script>
+		$(function() {
+			$.ajax({
+				url:"http://govhack.atdw.com.au/products?",
+				method:"GET",
+				data: {
+					key: 278965474541,
+					// term: {$varname}
+				}
+			});
+		})
+	</script>
+
 	<!-- /D3 -->
 </body>
 </html>
