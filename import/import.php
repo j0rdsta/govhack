@@ -191,10 +191,10 @@ function update_suburbs($update_locations = false) {
     	$crime = mysql_fetch_assoc($r);
     	$total_crime = (int) $crime['total_crime'];
     	if($total_crime) {
-	    	$suburb['crime_total'] = $total_crime;
+	    	$suburb['crime_accumulative'] = $total_crime;
 	    	$suburb['crime_percentile'] = ($total_crime - $crime_mean) / (float) $crime_stddev;
     	} else {
-    		$suburb['crime_total'] = null;
+    		$suburb['crime_accumulative'] = null;
     		$suburb['crime_percentile'] = null;
     	}
 
@@ -204,10 +204,10 @@ function update_suburbs($update_locations = false) {
     	$population = mysql_fetch_assoc($r);
     	$total_population = (int) $population['total_population'];
     	if($total_population) {
-	    	$suburb['population_total'] = $total_population;
+	    	$suburb['population_accumulative'] = $total_population;
 	    	$suburb['population_percentile'] = ($total_population - $population_mean) / (float) $population_stddev;
     	} else {
-    		$suburb['population_total'] = null;
+    		$suburb['population_accumulative'] = null;
     		$suburb['population_percentile'] = null;
     	}
 
@@ -226,11 +226,11 @@ function update_suburbs($update_locations = false) {
 			`suburb_name` = '{$suburb['suburb_name']}',
 			`latitude` = '{$suburb['latitude']}',
 			`longitude` = '{$suburb['longitude']}',
-			`crime_total` = '{$suburb['crime_total']}',
+			`crime_accumulative` = '{$suburb['crime_accumulative']}',
 			`crime_percentile` = '{$suburb['crime_percentile']}',
 			`crime_ranking` = '{$suburb['crime_ranking']}',
 			`crime_growth` = '{$suburb['crime_growth']}',
-			`population_total` = '{$suburb['population_total']}',
+			`population_accumulative` = '{$suburb['population_accumulative']}',
 			`population_percentile` = '{$suburb['population_percentile']}',
 			`population_ranking` = '{$suburb['population_ranking']}'
 			WHERE `suburb_id` = '{$suburb['suburb_id']}'
