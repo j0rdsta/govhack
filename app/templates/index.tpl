@@ -1,68 +1,21 @@
 {include "includes/header.tpl"}
 {include "includes/nav.tpl"}
-
+	{foreach $results as $result}
 	<!-- Item -->
 	<a href="#">
 		<div class="row">
 			<div class="small-2 columns">
-				<img src="http://placehold.it/100" alt="">
+				<img src="{$result.image}" alt="">
 			</div>
 			<div class="small-10 columns">
-				<h5>Varsity Lakes</h5>
-				<p>Crime Rating: Low<br>
-				Growth Rate: High</p>
+				<h5>{$result.name}</h5>
+				<p>Crime Rating: {$result.crimerating}<br>
+				Growth Rate: {$result.growthrate}</p>
 			</div>
 		</div>
 	</a>
 	<hr>
 	<!-- End Item -->
-
-	<!-- Item -->
-	<a href="#">
-		<div class="row">
-			<div class="small-2 columns">
-				<img src="http://placehold.it/100" alt="">
-			</div>
-			<div class="small-10 columns">
-				<h5>Varsity Lakes</h5>
-				<p>Crime Rating: Low<br>
-				Growth Rate: High</p>
-			</div>
-		</div>
-	</a>
-	<hr>
-	<!-- End Item -->
-
-	<!-- Item -->
-	<a href="#">
-		<div class="row">
-			<div class="small-2 columns">
-				<img src="http://placehold.it/100" alt="">
-			</div>
-			<div class="small-10 columns">
-				<h5>Varsity Lakes</h5>
-				<p>Crime Rating: Low<br>
-				Growth Rate: High</p>
-			</div>
-		</div>
-	</a>
-	<hr>
-	<!-- End Item -->
-
-	<!-- Item -->
-	<a href="#">
-		<div class="row">
-			<div class="small-2 columns">
-				<img src="http://placehold.it/100" alt="">
-			</div>
-			<div class="small-10 columns">
-				<h5>Varsity Lakes</h5>
-				<p>Crime Rating: Low<br>
-				Growth Rate: High</p>
-			</div>
-		</div>
-	</a>
-	<hr>
-	<!-- End Item -->
+	{/foreach}
 
 {include "includes/footer.tpl"}
