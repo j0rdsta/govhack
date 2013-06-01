@@ -1,4 +1,4 @@
-<body {if $title eq "FullStop"}class='home'{else}class='page'{/if}>
+<body {if empty($suburb)}class='home'{else}class='page'{/if}>
 
 	<!-- Navigation -->
 	<div class="contain-to-grid">
@@ -17,12 +17,12 @@
 
 			<ul class="right">
 				<li class="has-form">
-					<form action="#">
-						<input type="text" id="searchText" placeholder="Search">
+					<form action="/suburbs/search">
+						<input type="text" id="searchText" name="query" placeholder="Search">
 						<input type="submit" id="searchSub" value=""/>
 					</form>
 				</li>
-				{if $title != "FullStop"}
+				{if !empty($suburb)}
 				<li id="nav-divide" class="divider"></li>
 				<li class="has-form">
 					<a class="button" href="#">Review</a>
@@ -33,6 +33,3 @@
 	</div>
 
 	<!-- End Top Bar -->
-
-	{if $title eq "FullStop"}{include "feature.tpl"}{/if}
-

@@ -3,7 +3,7 @@
 <a href="/suburbs/view/{$result.suburb_id}" class="{cycle values='odd,even'}">
 	<div class="row">
 		<div class="small-2 columns text-center">
-			<img src="{$result.image|default:'images/placeholder_pin.png'}" alt="">
+			<img src="{$result.image|default:'/images/placeholder_pin.png'}" alt="">
 		</div>
 		<div class="small-10 columns">
 			<h5>{$result.suburb_name}</h5>

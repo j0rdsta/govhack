@@ -10,7 +10,7 @@ class Suburbs extends CI_Controller {
 
 	function index() {
 		$this->smartylib->assign('results', $this->Suburb->GetAll());
-		$this->smartylib->display('index.tpl');
+		$this->smartylib->display('suburbs/list.tpl');
 	}
 
 	function Create() {
@@ -29,6 +29,13 @@ class Suburbs extends CI_Controller {
 
 		$this->smartylib->assign('suburb', $suburb);
 		$this->smartylib->display('suburbs/view.tpl');
+	}
+
+	function Search() {
+		$query = isset($_GET['query'])? $_GET['query'] : '';
+		$this->smartylib->assign('results', $this->Suburb->Search($query));
+		$this->smartylib->assign('query', $query);
+		$this->smartylib->display('suburbs/search.tpl');
 	}
 
 	function Edit($suburb_id = null) {
