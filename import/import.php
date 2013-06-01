@@ -176,8 +176,8 @@ function update_suburbs($update_locations = false) {
     	$suburb = strip_array_slashes($suburb);
     	$suburb_name = mysql_real_escape_string($suburb['suburb_name']);
 
+    	// Find latitude and longitude of suburb using Google Geocode API (only if enabled in params)
     	if($update_locations) {
-	    	// Find latitude and longitude of suburb
 	    	$location = find_location($suburb['suburb_name']);
 	    	if($location) {
 				$suburb['latitude'] = $location['latitude'];
@@ -189,17 +189,56 @@ function update_suburbs($update_locations = false) {
     	$q = "SELECT SUM(count) AS total_crime, suburb_name FROM data_crime WHERE suburb_name = '$suburb_name'";
     	$r = mysql_query($q) or die("error in query: ".mysql_error()."<br/>$q");
     	$crime = mysql_fetch_assoc($r);
-    	$suburb['crime_total'] = (int) $suburb['crime_total'];
-    	if($crime['total_crime']) {
-	    	$suburb['crime_total'] = $crime['total_crime'];
-	    	$suburb['crime_percentile'] = ($crime['total_crime'] - $crime_mean) / (float) $crime_stddev;
+    	$total_crime = (int) $crime['total_crime'];
+    	if($total_crime) {
+	    	$suburb['crime_accumulative'] = $total_crime;
+	    	$suburb['crime_percentile'] = ($total_crime - $crime_mean) / (float) $crime_stddev;
     	} else {
-    		$suburb['crime_total'] = null;
+    		$suburb['crime_accumulative'] = null;
     		$suburb['crime_percentile'] = null;
     	}
+
+    	// Calculate population statistics
+    	$q = "SELECT SUM(population) AS total_population, suburb_name FROM data_population WHERE suburb_name = '$suburb_name'";
+    	$r = mysql_query($q) or die("error in query: ".mysql_error()."<br/>$q");
+    	$population = mysql_fetch_assoc($r);
+    	$total_population = (int) $population['total_population'];
+    	if($total_population) {
+	    	$suburb['population_accumulative'] = $total_population;
+	    	$suburb['population_percentile'] = ($total_population - $population_mean) / (float) $population_stddev;
+    	} else {
+    		$suburb['population_accumulative'] = null;
+    		$suburb['population_percentile'] = null;
+    	}
+
+    	$suburbs[] = $suburb;
     }
 
+	function crime_compare($a, $b) {
+		return $a['crime_accumulative'] < $b['crime_accumulative'];
+	}
+	usort($suburbs, "crime_compare");
 
+    for($i = 0; $i < count($suburbs); $i++) {
+    	if(!$suburbs[$i]['crime_accumulative']) {
+    		$suburbs[$i]['crime_ranking'] = null;
+    		continue;
+    	}
+    	$suburbs[$i]['crime_ranking'] = $i + 1;
+    }
+
+    function population_compare($a, $b) {
+		return $a['population_accumulative'] < $b['population_accumulative'];
+	}
+	usort($suburbs, "population_compare");
+
+    for($i = 0; $i < count($suburbs); $i++) {
+    	if(!$suburbs[$i]['population_accumulative']) {
+    		$suburbs[$i]['population_ranking'] = null;
+    		continue;
+    	}
+    	$suburbs[$i]['population_ranking'] = $i + 1;
+    }
 
     // Update suburbs
     foreach($suburbs as $suburb) {
@@ -209,11 +248,11 @@ function update_suburbs($update_locations = false) {
 			`suburb_name` = '{$suburb['suburb_name']}',
 			`latitude` = '{$suburb['latitude']}',
 			`longitude` = '{$suburb['longitude']}',
-			`crime_total` = '{$suburb['crime_total']}',
+			`crime_accumulative` = '{$suburb['crime_accumulative']}',
 			`crime_percentile` = '{$suburb['crime_percentile']}',
 			`crime_ranking` = '{$suburb['crime_ranking']}',
 			`crime_growth` = '{$suburb['crime_growth']}',
-			`population_total` = '{$suburb['population_total']}',
+			`population_accumulative` = '{$suburb['population_accumulative']}',
 			`population_percentile` = '{$suburb['population_percentile']}',
 			`population_ranking` = '{$suburb['population_ranking']}'
 			WHERE `suburb_id` = '{$suburb['suburb_id']}'
