@@ -3,7 +3,6 @@
 
 require "mysql.php";
 
-$salt='$qqqqwwww';
 // Show mysql error
 function show_error() {
   die("Error ". mysql_errno() . " : " . mysql_error());

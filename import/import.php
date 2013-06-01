@@ -34,10 +34,12 @@ function import_population_csv($filename){
 		$suburbs = explode('-', $row[0]);
 
 		foreach ($suburbs as $suburb_name) {
-			$region = $row[1];
+			$suburb_name = mysql_real_escape_string($suburb_name);
+			$region = mysql_real_escape_string($row[1]);
+
 			for($i = 2; $i < count($row); $i++) {
-				$year = $columns[$i];
-				$population = $row[$i];
+				$year = (int) $columns[$i];
+				$population = (int) $row[$i];
 
 				$q = "
 				INSERT INTO
@@ -77,11 +79,11 @@ function import_crime_csv($filename){
 			continue;// Skip first row because they are just the column headers
 		}
 
-		$suburb_name = $row[0];
-		$crime = $row[1];
+		$suburb_name = mysql_real_escape_string($row[0]);
+		$crime = mysql_real_escape_string($row[1]);
 		for($i = 2; $i < count($row); $i++) {
-			$year = $columns[$i];
-			$count = $row[$i];
+			$year = (int) $columns[$i];
+			$count = (int) $row[$i];
 
 			$q = "
 			INSERT INTO
