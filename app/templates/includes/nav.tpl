@@ -7,8 +7,8 @@
 				<!-- Title Area -->
 				<li class="name">
 					<h1>
-						<a href="#">
-							<img src="images/logo.png" alt="">
+						<a href="index.php">
+							<img src="images/logo.png" alt="FullStop Logo">
 						</a>
 					</h1>
 				</li>
@@ -16,6 +16,12 @@
 			</ul>
 
 			<section class="top-bar-section">
+				<!-- Left Nav Section -->
+				<ul class="left">
+					<li class="divider"></li>
+					<li><a href="#">Suburbs</a>
+					</li>
+				</ul>
 				<!-- Right Nav Section -->
 				<ul class="right">
 					<li class="divider"></li>
@@ -28,6 +34,8 @@
 	</div>
 
 	<!-- End Top Bar -->
+
+	{include "feature.tpl"}
 
 	<!-- Search -->
 	<div class="row">
