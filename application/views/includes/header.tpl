@@ -8,14 +8,14 @@
 	<meta name="viewport" content="width=device-width" />
 	<title>{$title}</title>
 
-	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="shortcut icon" href="/favicon.ico" />
 
-	<link rel="stylesheet" href="stylesheets/normalize.css" />
+	<link rel="stylesheet" href="/stylesheets/normalize.css" />
 
-	<link rel="stylesheet" href="stylesheets/app.css" />
+	<link rel="stylesheet" href="/stylesheets/app.css" />
 
-	<link rel="stylesheet" href="stylesheets/nv.d3.css" />
+	<link rel="stylesheet" href="/stylesheets/nv.d3.css" />
 
-	<script src="javascripts/vendor/custom.modernizr.js"></script>
+	<script src="/javascripts/vendor/custom.modernizr.js"></script>
 
 </head>

@@ -2,6 +2,6 @@
 {include "includes/header.tpl"}
 {include "includes/nav.tpl"}
 
-{include "results.tpl"}
+{include "suburbs/results.tpl"}
 
 {include "includes/footer.tpl"}

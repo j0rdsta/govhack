@@ -9,7 +9,6 @@ class Suburbs extends CI_Controller {
 	}
 
 	function index() {
-		error_log(print_r($this->Suburb->GetAll(), true));
 		$this->smartylib->assign('results', $this->Suburb->GetAll());
 		$this->smartylib->display('index.tpl');
 	}
@@ -26,9 +25,10 @@ class Suburbs extends CI_Controller {
 		if (!$suburb_id)
 			redirect('/');
 		if (!$suburb = $this->Suburb->Get($suburb_id))
-			die('Invalid suburb');
+			die('Invalid suburb');//TODO: Nice error page
 
-		//View
+		$this->smartylib->assign('suburb', $suburb);
+		$this->smartylib->display('suburbs/view.tpl');
 	}
 
 	function Edit($suburb_id = null) {

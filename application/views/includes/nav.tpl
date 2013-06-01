@@ -7,8 +7,8 @@
 				<!-- Title Area -->
 				<li class="name">
 					<h1>
-						<a href="index.php">
-							<img src="images/logo.png" alt="FullStop Logo">
+						<a href="/">
+							<img src="/images/logo.png" alt="FullStop Logo">
 						</a>
 					</h1>
 				</li>

@@ -1,4 +1,4 @@
-{assign var=title value="{$suburb_name}"} <!-- Change to variable -->
+{assign var=title value="{$suburb.suburb_name}"} <!-- Change to variable -->
 {include "includes/header.tpl"}
 {include "includes/nav.tpl"}
 

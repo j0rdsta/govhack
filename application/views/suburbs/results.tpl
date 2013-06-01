@@ -1,6 +1,6 @@
 {foreach $results as $result}
 <!-- Item -->
-<a href="#" class="{cycle values='odd,even'}">
+<a href="/suburbs/view/{$result.suburb_id}" class="{cycle values='odd,even'}">
 	<div class="row">
 		<div class="small-2 columns text-center">
 			<img src="{$result.image|default:'images/placeholder_pin.png'}" alt="">
