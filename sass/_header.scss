@@ -15,8 +15,19 @@
 	}
 }
 
-.contain-to-grid .top-bar  {
+.contain-to-grid {
+	margin-bottom: 25px;
+	.top-bar  {
+		margin-bottom: 0;
+	}
+}
+
+.home .contain-to-grid {
 	margin-bottom: 0;
+}
+
+.suburb_name {
+	margin-top: 0;
 }
 
 #feature {

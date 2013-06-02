@@ -4,8 +4,11 @@
 
 <!-- Header -->
 <div class="row">
-	<div class="large-12 columns">
+	<div class="large-10 columns">
 		<h1 class="suburb_name" data-latitude="{$suburb.latitude}" data-longitude="{$suburb.longitude}">{$suburb.suburb_name}</h1>
+	</div>
+	<div class="large-2 columns">
+		<a class="button" href="#" data-reveal-id="reviewModal">Review</a>
 	</div>
 </div>
 
