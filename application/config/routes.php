@@ -42,5 +42,7 @@ $route['default_controller'] = "suburbs";
 $route['404_override'] = '';
 
 
+$route['pages/(:any)'] = 'pages/view/$1';
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

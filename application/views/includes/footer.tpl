@@ -1,11 +1,14 @@
 	<footer>
 		<div class="row">
-			<div class="large-12 columns">
+			<div class="large-10 columns">
 				<p>
 					FullStop by GovHat is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
 					<br>
 					<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a>
 				</p>
+			</div>
+			<div class="large-2 columns text-right">
+				<p><a href="/pages/documentation">Documentation</a></p>
 			</div>
 		</div>
 	</footer>
