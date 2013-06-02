@@ -12,11 +12,7 @@
 
 	<div id="test"></div>
 
-	<script>
-	document.write('<script src=' +
-		('__proto__' in {} ? '/javascripts/vendor/zepto' : '/javascripts/vendor/jquery') +
-		'.js><\/script>')
-	</script>
+	<script src="/javascripts/vendor/jquery.js"></script>
 
 	<script src="/javascripts/foundation/foundation.js"></script>
 
@@ -46,6 +42,12 @@
 
 	<script src="/javascripts/foundation/foundation.topbar.js"></script>
 
+	<!-- Review Modal -->
+
+	<script src="/javascripts/jquery.raty.min.js"></script>
+
+	
+
 	<div id="reviewModal" class="reveal-modal">
 		<h2>Review {$suburb.suburb_name|default:'This Suburb'}</h2>
 		<form action="#" class="custom">
@@ -66,6 +68,14 @@
 				</div>
 			</div>
 			<div class="row">
+				<div class="large-3 small-6 columns">
+					<label class="right inline">Your Review</label>
+				</div>
+				<div class="large-9 small-6 columns">
+					<div id="star"></div>
+				</div>
+			</div>
+			<div class="row">
 				<div class="large-9 large-offset-3 small-6 small-offset-6 columns">
 					<input type="submit" class="button" value="Submit Review">
 				</div>
@@ -73,6 +83,17 @@
 		</form>
 		<a class="close-reveal-modal">&#215;</a>
 	</div>
+
+	<script>
+		$(function() {
+			// from http://wbotelhos.com/raty/
+			$('#star').raty({
+				path: '/images'
+			});
+		});
+	</script>
+
+	<!-- End Review Modal -->
 
 	<script>
 		$(document).foundation();
