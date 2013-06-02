@@ -62,7 +62,7 @@
 					<label for="review-name" class="right inline">Your Name</label>
 				</div>
 				<div class="large-9 small-6 columns">
-					<input type="text" id="review-name" name="review[name]" data-type="alphanum" placeholder="eg. Jessica Mills">
+					<input type="text" id="review-name" name="review[name]" data-required="true" data-error-message="You must enter a name" placeholder="eg. Jessica Mills">
 				</div>
 			</div>
 			<div class="row">
@@ -70,7 +70,7 @@
 					<label for="review-email" class="right inline">Your Email</label>
 				</div>
 				<div class="large-9 small-6 columns">
-					<input data-type="email" type="email" id="review-email" name="review[email]" placeholder="eg. john@example.com">
+					<input data-type="email" data-error-message="You must enter a valid email" data-required="true" data-trigger="change" type="email" id="review-email" name="review[email]" placeholder="eg. john@example.com">
 				</div>
 			</div>
 			<div class="row">
@@ -78,7 +78,7 @@
 					<label for="review-comments" class="right inline">Your Comments</label>
 				</div>
 				<div class="large-9 small-6 columns">
-					<textarea  data-type="alphanum" id="review-comments" name="review[review]" placeholder="eg. I loved visiting {$suburb.suburb_name|default:'This Suburb'}!"></textarea>
+					<textarea data-required="true" data-error-message="You must enter a review" data-type="alphanum" id="review-comments" name="review[review]" placeholder="eg. I loved visiting {$suburb.suburb_name|default:'This Suburb'}!"></textarea>
 				</div>
 			</div>
 			<div class="row">
