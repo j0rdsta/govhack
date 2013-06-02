@@ -42,6 +42,9 @@
 		<br/>
 		<div class="row">
 			<div class="large-2 columns">
+				&nbsp;
+			</div>			
+			<div class="large-2 columns">
 				<strong>Name</strong>
 			</div>
 			<div class="large-2 columns">
@@ -51,13 +54,17 @@
 				<strong>Tasks</strong>
 			</div>
 			<div class="large-offset-2 columns"></div>
+
 		</div>
 		<div class="row">
-			<div class="large-6 columns">
+			<div class="large-8 columns">
 				<hr/>
 			</div>
 		</div>
 		<div class="row">
+			<div class="large-2 columns">
+				<img src="../images/jordan.jpg" alt="Jordan Gardiner"/>
+			</div>
 			<div class="large-2 columns">
 				<p>
 					Jordan Gardiner
@@ -81,11 +88,14 @@
 			<div class="large-offset-2 columns"></div>
 		</div>	
 		<div class="row">
-			<div class="large-6 columns">
+			<div class="large-8 columns">
 				<hr/>
 			</div>
 		</div>		
 		<div class="row">
+			<div class="large-2 columns">
+				<img src="../images/matt.jpg" alt="Matt Patterson"/>
+			</div>
 			<div class="large-2 columns">
 				<p>
 					Matt Patterson
@@ -105,11 +115,14 @@
 			<div class="large-offset-2 columns"></div>
 		</div>	
 		<div class="row">
-			<div class="large-6 columns">
+			<div class="large-8 columns">
 				<hr/>
 			</div>
 		</div>		
 		<div class="row">
+			<div class="large-2 columns">
+				<img src="../images/jake.jpg" alt="Jake Sieben"/>
+			</div>
 			<div class="large-2 columns">
 				<p>
 					Jake Sieben
@@ -131,11 +144,14 @@
 			<div class="large-offset-2 columns"></div>
 		</div>	
 		<div class="row">
-			<div class="large-6 columns">
+			<div class="large-8 columns">
 				<hr/>
 			</div>
 		</div>		
 		<div class="row">
+			<div class="large-2 columns">
+				<img src="../images/jazz.jpg" alt="Jasmin Ernest"/>
+			</div>
 			<div class="large-2 columns">
 				<p>
 					Jasmin Ernest
@@ -160,11 +176,14 @@
 			<div class="large-offset-2 columns"></div>
 		</div>		
 		<div class="row">
-			<div class="large-6 columns">
+			<div class="large-8 columns">
 				<hr/>
 			</div>
 		</div>		
 		<div class="row">
+			<div class="large-2 columns">
+				<img src="../images/bentley.jpg" alt="Bentley O'Kane Chase"/>
+			</div>
 			<div class="large-2 columns">
 				<p>
 					Bentley O'Kane-Chase
