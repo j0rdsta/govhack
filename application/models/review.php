@@ -34,8 +34,6 @@ class Review extends CI_Model {
 			if(isset($data[$field]))
 				$fields[$field] = $data[$field];
 
-						error_log('fields' . print_r($fields, true));
-
 		if ($fields) {
 			$this->db->insert('reviews', $fields);
 			return $this->db->insert_id();
