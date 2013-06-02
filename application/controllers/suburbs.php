@@ -12,7 +12,17 @@ class Suburbs extends CI_Controller {
 	function index() {
 		$this->smartylib->assign('results', $this->Suburb->GetAll());
 		$this->smartylib->assign('average_crime', $this->Crime->GetAverageLatest());
+		$this->smartylib->assign('search_params', $this->getSearchParams());
 		$this->smartylib->display('suburbs/list.tpl');
+	}
+
+	private function getSearchParams() {
+		$search_params = array(
+			'crime' => @$_GET['crime'],
+			'orderby' => @$_GET['orderby'],
+			'sort' => @$_GET['sort']
+		);
+		return $search_params;
 	}
 
 	function Create() {
@@ -40,6 +50,7 @@ class Suburbs extends CI_Controller {
 		$this->smartylib->assign('results', $this->Suburb->Search($query));
 		$this->smartylib->assign('query', $query);
 		$this->smartylib->assign('average_crime', $this->Crime->GetAverageLatest());
+		$this->smartylib->assign('search_params', $this->getSearchParams());
 		$this->smartylib->display('suburbs/search.tpl');
 	}
 
