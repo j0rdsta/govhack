@@ -12,7 +12,6 @@
 						</a>
 					</h1>
 				</li>
-				<li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
 			</ul>
 
 			<ul class="right">

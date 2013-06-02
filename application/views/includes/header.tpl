@@ -12,7 +12,7 @@
 
 	<link rel="stylesheet" href="/stylesheets/normalize.css" />
 
-	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
 	<!--[if IE 7]>
 	<link rel="stylesheet" href="/stylesheets/font-awesome-ie7.min.css">

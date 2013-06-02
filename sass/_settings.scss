@@ -25,7 +25,7 @@ $em-base: 16px !default;
 
 // $body-bg: #fff;
 // $body-font-color: #222;
-$body-font-family: 'Noticia Text', serif;
+$body-font-family: 'Roboto Slab', serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -114,7 +114,7 @@ $shiny-edge-size: 0;
 
 //// Heading font styles
 
-$header-font-family: 'Noticia Text', serif;
+$header-font-family: 'Roboto Slab', serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -1188,5 +1188,5 @@ $topbar-bg: $primary-color;
 //// Transitions and breakpoint styles
 
 // $topbar-transition-speed: 300ms;
-// $topbar-breakpoint: emCalc(940px); // Change to 9999px for always mobile layout
+$topbar-breakpoint: emCalc(0px); // Change to 9999px for always mobile layout
 // $topbar-media-query: "only screen and (min-width "#{$topbar-breakpoint}")";

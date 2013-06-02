@@ -7,12 +7,17 @@
 .top-bar {
 	a img {
 		margin-top: 7px;
+		max-width: 200px;
+	}
+
+	#nav-divide {
+		border-right: 1px solid darken($primary-color, 10%);
 	}
 }
 
 .contain-to-grid .top-bar  {
 	margin-bottom: 0;
-} 
+}
 
 #feature {
 	background: url("../images/skyline.jpg") no-repeat center fixed;
@@ -21,6 +26,11 @@
 	color: #FFF;
 	h1 {
 		color: #FFF;
+		font-weight: 100;
+		display: inline-block;
+		background: rgba($primary-color, 0.8);
+		border-bottom: 15px solid darken($primary-color, 10%);
+		padding: 15px;
 	}
 }
 
