@@ -4,8 +4,8 @@
 			<div class="row">
 				<div class="large-12 columns">
 					<h5>{$review.name}</h5>
-					<div>{$review.rating}</div>
 					<p>{$review.review}</p>
+					<div class="reviewstars" data-score="{$review.rating}"></div>
 				</div>
 			</div>
 		</div>

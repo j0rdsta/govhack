@@ -105,6 +105,13 @@
 				path: '/images',
 				scoreName: 'review[rating]'
 			});
+			$('.reviewstars').raty({
+				path: '/images',
+				readOnly: true,
+				score: function() {
+					return $(this).attr('data-score');
+				}
+			});
 		});
 	</script>
 
