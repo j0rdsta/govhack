@@ -1,61 +1,72 @@
 $(function() {
+  var id = String(location.pathname).split('/').pop();
+
+  // Display Crime Chart
   if($('#crime-chart').length) {
-    var id = String(location.pathname).split('/').pop();
-
     $.ajax({
-      url: '/suburbs/crimejson/' + id,
-      method: 'GET',
-      dataType: 'json',
-      success: function(data) {
-        var values = $.each(data, function(index, element) {
-          element['x'] = parseInt(element['year']);
-          element['y'] = parseInt(element['total_count']);
-          return element;
-        })
+        url: '/crimes/averagejson',
+        method: 'GET',
+        dataType: 'json',
+        success: function(average_data) {
+          var averageValues = $.each(average_data, function(index, element) {
+            element['x'] = parseInt(element['year']);
+            element['y'] = parseInt(element['avg_count']);
+            return element;
+          })
 
-        var crimeData = [
-          {
-            values: values,
-            key: 'Crime',
-            color: '#ca345e'
-          }
-        ];
+          $.ajax({
+            url: '/suburbs/crimejson/' + id,
+            method: 'GET',
+            dataType: 'json',
+            success: function(data) {
+              var values = $.each(data, function(index, element) {
+                element['x'] = parseInt(element['year']);
+                element['y'] = parseInt(element['total_count']);
+                return element;
+              })
 
+              var crimeData = [
+                {
+                  values: values,
+                  key: 'Crime',
+                  color: '#ca345e'
+                },
+                {
+                  values: averageValues,
+                  key: 'Average Crime',
+                  color: '#a5bfdd'
+                }
+              ];
 
-        // Population Chart
-        nv.addGraph(function() {
-          var chart1 = nv.models.lineChart();
+              // Crime Chart
+              nv.addGraph(function() {
+                var chart1 = nv.models.lineChart();
 
-          chart1.xAxis
-              .axisLabel('Year');
-              //.tickFormat(d3.format(',r'));
+                chart1.xAxis
+                    .axisLabel('Year');
+                    //.tickFormat(d3.format(',r'));
 
-          chart1.yAxis
-              .axisLabel('Total Crime');
-              //.tickFormat(d3.format('.02f'));
+                chart1.yAxis
+                    .axisLabel('Total Crime');
+                    //.tickFormat(d3.format('.02f'));
 
-          d3.select('#crime-chart svg')
-              .datum(crimeData)
-              .transition().duration(500)
-              .call(chart1);
+                d3.select('#crime-chart svg')
+                    .datum(crimeData)
+                    .transition().duration(500)
+                    .call(chart1);
 
-          nv.utils.windowResize(function() { d3.select('#crime-chart svg').call(chart1) });
+                nv.utils.windowResize(function() { d3.select('#crime-chart svg').call(chart1) });
 
-          return chart1;
-        });
-
-
-      }
+                return chart1;
+              });
+            }
+          });
+        }
     });
-
-
-
-
   }
   
+  // Display Population Chart
   if($('#population-chart').length) {
-    var id = String(location.pathname).split('/').pop();
-
     $.ajax({
       url: '/suburbs/populationjson/' + id,
       method: 'GET',
@@ -97,14 +108,8 @@ $(function() {
 
           return chart2;
         });
-
-
       }
     });
-
-
-
-
   }
 
   /**************************************
