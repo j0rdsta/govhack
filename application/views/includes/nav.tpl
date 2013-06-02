@@ -1,5 +1,16 @@
 <body {if empty($suburb)}class='home'{else}class='page'{/if}>
 
+	<!-- Facebook Like Button -->
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
 	<!-- Navigation -->
 	<div class="contain-to-grid">
 		<nav class="top-bar">
@@ -21,12 +32,6 @@
 						<input type="submit" id="searchSub" value=""/>
 					</form>
 				</li>
-				{if !empty($suburb)}
-				<li id="nav-divide" class="divider"></li>
-				<li class="has-form">
-					<a class="button" href="#" data-reveal-id="reviewModal">Review</a>
-				</li>
-				{/if}
 			</ul>
 		</nav>
 	</div>

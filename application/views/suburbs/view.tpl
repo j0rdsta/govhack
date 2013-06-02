@@ -19,7 +19,8 @@
 	<div class="large-3 columns">
 		<p>Population: {$suburb.population_latest|number_format:0:".":","}</p>
 	</div>
-	<div class="large-offset-6 columns">
+	<div class="large-2 columns">
+		<div class="fb-like" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
 	</div>
 </div>
 <!-- End Header -->
