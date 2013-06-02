@@ -78,7 +78,7 @@
 					<label for="review-comments" class="right inline">Your Comments</label>
 				</div>
 				<div class="large-9 small-6 columns">
-					<textarea data-required="true" data-error-message="You must enter a review" data-type="alphanum" id="review-comments" name="review[review]" placeholder="eg. I loved visiting {$suburb.suburb_name|default:'This Suburb'}!"></textarea>
+					<textarea data-required="true" data-error-message="You must enter a review" id="review-comments" name="review[review]" placeholder="eg. I loved visiting {$suburb.suburb_name|default:'This Suburb'}!"></textarea>
 				</div>
 			</div>
 			<div class="row">
