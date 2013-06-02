@@ -5,7 +5,7 @@
 <div class="row">
 	<div class="large-12 columns">
 		<h1>Documentation</h1>
-		<p>Video goes here <br/><img src="http://placehold.it/500x300" alt="placeholder"/></p>
+		<iframe width="500" height="315" src="http://www.youtube.com/embed/4OQGaJrO2r0" frameborder="0" allowfullscreen></iframe>
 		<div class="row">
 			<div class="large-2 columns">
 				<p>
@@ -338,6 +338,8 @@
 			<li><strong>Local Cash Prize:</strong> 5×$1,000</li>
 			<li><strong>The People's Choice Award (Linux Australia):</strong> $2,000</li>
 			<li><strong>Spirit of GovHack (Gold Coast):</strong> $1,000</li>
+			<li><strong>Best Visual Story Telling (Microsoft):</strong> $1,000</li>
+			<iframe width="500" height="315" src="http://www.youtube.com/embed/1gejdjYYPkA" frameborder="0" allowfullscreen></iframe>
 	</ul>	
 	</div>
 	<div class="large-offset-4 columns">
