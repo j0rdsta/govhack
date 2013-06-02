@@ -46,6 +46,34 @@
 
 	<script src="/javascripts/foundation/foundation.topbar.js"></script>
 
+	<div id="reviewModal" class="reveal-modal">
+		<h2>Review {$suburb.suburb_name|default:'This Suburb'}</h2>
+		<form action="#" class="custom">
+			<div class="row">
+				<div class="large-3 small-6 columns">
+					<label for="review-name" class="right inline">Your Name</label>
+				</div>
+				<div class="large-9 small-6 columns">
+					<input type="text" id="review-name" placeholder="eg. Jessica Mills">
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-3 small-6 columns">
+					<label for="review-comments" class="right inline">Your Comments</label>
+				</div>
+				<div class="large-9 small-6 columns">
+					<textarea id="review-comments" placeholder="eg. I loved visiting {$suburb.suburb_name|default:'This Suburb'}!"></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-9 large-offset-3 small-6 small-offset-6 columns">
+					<input type="submit" class="button" value="Submit Review">
+				</div>
+			</div>
+		</form>
+		<a class="close-reveal-modal">&#215;</a>
+	</div>
+
 	<script>
 		$(document).foundation();
 	</script>

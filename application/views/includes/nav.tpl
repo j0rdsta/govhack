@@ -24,7 +24,7 @@
 				{if !empty($suburb)}
 				<li id="nav-divide" class="divider"></li>
 				<li class="has-form">
-					<a class="button" href="#">Review</a>
+					<a class="button" href="#" data-reveal-id="reviewModal">Review</a>
 				</li>
 				{/if}
 			</ul>

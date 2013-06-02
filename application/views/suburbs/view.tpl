@@ -31,7 +31,6 @@
 	<div class="large-offset-6 columns">
 	</div>
 </div>
-			
 <!-- End Header -->
 
 <!-- Map -->
