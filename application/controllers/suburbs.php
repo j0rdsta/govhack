@@ -37,7 +37,7 @@ class Suburbs extends CI_Controller {
 		if (!$suburb_id)
 			redirect('/');
 		if (!$suburb = $this->Suburb->Get($suburb_id))
-			die('Invalid suburb');//TODO: Nice error page
+			show_error('Invalid suburb');//TODO: Nice error page
 
 		$this->smartylib->assign('suburb', $suburb);
 		$this->smartylib->assign('average_crime', $this->Crime->GetAverageLatest());
@@ -45,12 +45,42 @@ class Suburbs extends CI_Controller {
 	}
 
 	function Search() {
+		$search_params = $this->getSearchParams();
 		$query = isset($_GET['query'])? $_GET['query'] : '';
+		$average_crime = $this->Crime->GetAverageLatest();
 
-		$this->smartylib->assign('results', $this->Suburb->Search($query));
+		$search_where = array();
+		if(!empty($search_params['crime'])) {
+			if($search_params['crime'] == 'high') {
+				$search_where['crime_latest >'] = $average_crime;
+			} else {
+				$search_where['crime_latest <='] = $average_crime;
+			}
+		}
+
+		$order_by;
+		switch($search_params['orderby']) {
+			case 'crime':
+				$order_by = 'crime_latest';
+			break;
+			case 'population':
+				$order_by = 'population_latest';
+			break;
+			case 'alpha':
+			default:
+				$order_by = 'suburb_name';
+			break;
+		}
+		if(!empty($search_params['sort']) && $search_params['sort'] == 'desc') {
+			$order_by .= " DESC";
+		} else {
+			$order_by .= " ASC";
+		}
+		
+		$this->smartylib->assign('results', $this->Suburb->Search($query, $search_where, $order_by));
 		$this->smartylib->assign('query', $query);
-		$this->smartylib->assign('average_crime', $this->Crime->GetAverageLatest());
-		$this->smartylib->assign('search_params', $this->getSearchParams());
+		$this->smartylib->assign('average_crime', $average_crime);
+		$this->smartylib->assign('search_params', $search_params);
 		$this->smartylib->display('suburbs/search.tpl');
 	}
 
@@ -59,7 +89,7 @@ class Suburbs extends CI_Controller {
 			//$suburb = $this->Suburb->GetPrototype();
 		} else {
 			if (!$suburb = $this->Suburb->Get($suburb_id))
-				die('Invalid suburbs');
+				show_error('Invalid suburbs');
 		}
 
 		// Valid & posted

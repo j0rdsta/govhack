@@ -23,10 +23,12 @@ class Suburb extends CI_Model {
 		return $this->db->get()->result_array();
 	}
 
-	function Search($query = null, $orderby = null, $limit = 100, $offset = 0) {
+	function Search($query = null, $where = null, $orderby = null, $limit = 100, $offset = 0) {
 		$this->db->from('suburbs');
 		if (!empty($query))
 			$this->db->like('suburb_name', $query);
+		if ($where)
+			$this->db->where($where);
 		if ($orderby)
 			$this->db->order_by($orderby);
 		$this->db->limit($limit,$offset);
