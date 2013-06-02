@@ -87,6 +87,6 @@ $(function() {
 	});
 
 	$('form#review').parsley({
-		errorClass: 'error'
+		errorClass: 'error',
 	});
 });

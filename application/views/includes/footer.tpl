@@ -102,7 +102,8 @@
 		$(function() {
 			// from http://wbotelhos.com/raty/
 			$('#star').raty({
-				path: '/images'
+				path: '/images',
+				scoreName: 'review[rating]'
 			});
 		});
 	</script>
