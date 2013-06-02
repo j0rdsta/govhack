@@ -5,6 +5,7 @@ class Suburbs extends CI_Controller {
 		//$this->Security->EnsureLogin();
 		$this->load->model('Suburb');
 		$this->load->model('Crime');
+		$this->load->model('Review');
 		$this->load->helper('url');
 		$this->load->library('smartylib');
 	}
@@ -39,11 +40,11 @@ class Suburbs extends CI_Controller {
 		if (!$suburb = $this->Suburb->Get($suburb_id))
 			show_error('Invalid suburb');//TODO: Nice error page
 
-		$reviews = array('1', '2');
+		$reviews = array();//array('1', '2');
 
 		$this->smartylib->assign('suburb', $suburb);
 		$this->smartylib->assign('average_crime', $this->Crime->GetAverageLatest());
-		$this->smartylib->assign('reviews', $reviews);
+		$this->smartylib->assign('reviews', $this->Review->GetAll(array('suburb_id' => $suburb_id)));
 		$this->smartylib->display('suburbs/view.tpl');
 	}
 

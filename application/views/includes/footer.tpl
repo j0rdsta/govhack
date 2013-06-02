@@ -50,13 +50,14 @@
 
 	<div id="reviewModal" class="reveal-modal">
 		<h2>Review {$suburb.suburb_name|default:'This Suburb'}</h2>
-		<form action="#" class="custom">
+		<form action="/reviews/create" class="custom" method="post">
+			<input type="hidden" name="review[suburb_id]" value="{$suburb.suburb_id|default:false}" />
 			<div class="row">
 				<div class="large-3 small-6 columns">
 					<label for="review-name" class="right inline">Your Name</label>
 				</div>
 				<div class="large-9 small-6 columns">
-					<input type="text" id="review-name" placeholder="eg. Jessica Mills">
+					<input type="text" id="review-name" name="review[name]" placeholder="eg. Jessica Mills">
 				</div>
 			</div>
 			<div class="row">
@@ -64,7 +65,7 @@
 					<label for="review-email" class="right inline">Your Email</label>
 				</div>
 				<div class="large-9 small-6 columns">
-					<input type="email" id="review-email" placeholder="eg. john@example.com">
+					<input type="email" id="review-email" name="review[email]" placeholder="eg. john@example.com">
 				</div>
 			</div>
 			<div class="row">
@@ -72,7 +73,7 @@
 					<label for="review-comments" class="right inline">Your Comments</label>
 				</div>
 				<div class="large-9 small-6 columns">
-					<textarea id="review-comments" placeholder="eg. I loved visiting {$suburb.suburb_name|default:'This Suburb'}!"></textarea>
+					<textarea id="review-comments" name="review[review]" placeholder="eg. I loved visiting {$suburb.suburb_name|default:'This Suburb'}!"></textarea>
 				</div>
 			</div>
 			<div class="row">
@@ -80,7 +81,8 @@
 					<label class="right inline">Your Review</label>
 				</div>
 				<div class="large-9 small-6 columns">
-					<div id="star"></div>
+					<div id="star" name="review[rating]"></div>
+					<input type="text" name="review[rating]" />
 				</div>
 			</div>
 			<div class="row">

@@ -62,39 +62,5 @@ class Suburb extends CI_Model {
 		$result = $this->db->get()->row_array();
 		return $result['count'];
 	}
-
-	/**
-	* Creates a new suburb
-	* @param array $data Data that should be used to create the suburb
-	* @return int Either the new suburb ID or false
-	*/
-	function Create($data) {
-		$fields = array();
-		foreach (array('suburb_name') as $field)
-			if (isset($data[$field]))
-				$fields[$field] = $data[$field];
-
-		if ($fields) {
-			$this->db->insert('suburbs', $fields);
-			return $this->db->insert_id();
-		} else {
-			return FALSE;
-		}
-	}
-
-	function Save($suburb_id, $data) {
-		$fields = array();
-		foreach (array('suburb_name') as $field)
-			if (isset($data[$field]))
-				$fields[$field] = $data[$field];
-
-		if ($fields) {
-			$this->db->where('suburb_id', $suburb_id);
-			$this->db->update('suburbs', $fields);
-			return TRUE;
-		} else {
-			return FALSE;
-		}
-	}
 }
 ?>
