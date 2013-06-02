@@ -13,9 +13,12 @@
 	<link rel="stylesheet" href="/stylesheets/normalize.css" />
 
 	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+	<!--[if IE 7]>
+	<link rel="stylesheet" href="/stylesheets/font-awesome-ie7.min.css">
+	<![endif]-->
 
 	<link rel="stylesheet" href="/stylesheets/app.css" />
-
 	<link rel="stylesheet" href="/stylesheets/nv.d3.css" />
 
 	<script src="/javascripts/vendor/custom.modernizr.js"></script>
