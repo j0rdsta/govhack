@@ -1,4 +1,3 @@
-
 {foreach $results as $result}
 <!-- Item -->
 <a href="/suburbs/view/{$result.suburb_id}" class="{cycle values='odd,even'}">
@@ -9,20 +8,8 @@
 		<div class="small-10 columns">
 			<h5>{$result.suburb_name}</h5>
 
-			<p>Crime Rating:
-			{if $result.crime_percentile}
-				{if $result.crime_percentile > 1}
-					<span class="radius alert label">High</span>
-				{elseif $result.crime_percentile > 0}
-					<span class="radius warning label">Medium</span>
-				{else}
-					<span class="radius success label">Low</span>
-				{/if}
-			{else}
-				<span class="radius secondary label">Unknown</span>
-			{/if}
-			</p>
-			<p>Population: {$result.population_percentile}</p>
+			<p>Crime Rating: {include "includes/crime_rating_label.tpl" crime=$result.crime_latest }</p>
+			<p>Population: {$result.population_latest|number_format:0:".":","}</p>
 		</div>
 	</div>
 </a>

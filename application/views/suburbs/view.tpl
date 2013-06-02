@@ -11,22 +11,10 @@
 
 <div class="row">
 	<div class="large-3 columns">
-		<p>Crime Rating: 
-			{if $suburb.crime_percentile}
-				{if $suburb.crime_percentile > 1}
-					<span class="radius alert label">High</span>
-				{elseif $suburb.crime_percentile > 0}
-					<span class="radius warning label">Medium</span>
-				{else}
-					<span class="radius success label">Low</span>
-				{/if}
-			{else}
-				<span class="radius secondary label">Unknown</span>
-			{/if}
-		</p>
+		<p>Crime Rating: {include "includes/crime_rating_label.tpl" crime=$suburb.crime_latest }</p>
 	</div>
 	<div class="large-3 columns">
-		<p>Population: {$suburb.population_percentile}</p>
+		<p>Population: {$suburb.population_latest|number_format:0:".":","}</p>
 	</div>
 	<div class="large-offset-6 columns">
 	</div>

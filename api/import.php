@@ -186,10 +186,11 @@ function update_suburbs($update_locations = false) {
     	}
 
     	// Calculate crime statistics
-    	$q = "SELECT SUM(count) AS total_crime, suburb_name FROM data_crime WHERE suburb_name = '$suburb_name'";
+    	$q = "SELECT SUM(count) AS total_crime, suburb_name, (SELECT SUM(count) FROM data_crime WHERE suburb_name = '$suburb_name' AND year = (SELECT year FROM data_crime WHERE suburb_name = '$suburb_name' ORDER BY year DESC LIMIT 1)) AS count FROM data_crime WHERE suburb_name = '$suburb_name'";
     	$r = mysql_query($q) or die("error in query: ".mysql_error()."<br/>$q");
     	$crime = mysql_fetch_assoc($r);
     	$total_crime = (int) $crime['total_crime'];
+    	$current_crime = (int) $crime['count'];
     	if($total_crime) {
 	    	$suburb['crime_accumulative'] = $total_crime;
 	    	$suburb['crime_percentile'] = ($total_crime - $crime_mean) / (float) $crime_stddev;
@@ -198,17 +199,30 @@ function update_suburbs($update_locations = false) {
     		$suburb['crime_percentile'] = null;
     	}
 
+    	if($current_crime) {
+    		$suburb['crime_latest'] = $current_crime;
+    	} else {
+			$suburb['crime_latest'] = null;
+    	}
+
     	// Calculate population statistics
-    	$q = "SELECT SUM(population) AS total_population, suburb_name FROM data_population WHERE suburb_name = '$suburb_name'";
+    	$q = "SELECT SUM(population) AS total_population, suburb_name, (SELECT population FROM data_population WHERE suburb_name = '$suburb_name' ORDER BY year ASC LIMIT 1) AS population FROM data_population WHERE suburb_name = '$suburb_name'";
     	$r = mysql_query($q) or die("error in query: ".mysql_error()."<br/>$q");
     	$population = mysql_fetch_assoc($r);
     	$total_population = (int) $population['total_population'];
+    	$current_population = (int) $population['population'];
     	if($total_population) {
 	    	$suburb['population_accumulative'] = $total_population;
 	    	$suburb['population_percentile'] = ($total_population - $population_mean) / (float) $population_stddev;
     	} else {
     		$suburb['population_accumulative'] = null;
     		$suburb['population_percentile'] = null;
+    	}
+
+    	if($current_population) {
+    		$suburb['population_latest'] = $current_population;
+    	} else {
+			$suburb['population_latest'] = null;
     	}
 
     	$suburbs[] = $suburb;
@@ -251,10 +265,11 @@ function update_suburbs($update_locations = false) {
 			`crime_accumulative` = '{$suburb['crime_accumulative']}',
 			`crime_percentile` = '{$suburb['crime_percentile']}',
 			`crime_ranking` = '{$suburb['crime_ranking']}',
-			`crime_growth` = '{$suburb['crime_growth']}',
+			`crime_latest` = '{$suburb['crime_latest']}',
 			`population_accumulative` = '{$suburb['population_accumulative']}',
 			`population_percentile` = '{$suburb['population_percentile']}',
-			`population_ranking` = '{$suburb['population_ranking']}'
+			`population_ranking` = '{$suburb['population_ranking']}',
+			`population_latest` = '{$suburb['population_latest']}'
 			WHERE `suburb_id` = '{$suburb['suburb_id']}'
 		";
 		$ur = mysql_query($uq) or die("error in query: ".mysql_error()."<br/>$q");

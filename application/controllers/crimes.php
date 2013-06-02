@@ -8,7 +8,6 @@ class Crimes extends CI_Controller {
 
 	function AverageJSON($suburb_id = null) {
 		$crime = $this->Crime->GetAverage();
-
 		$this->output
 	    ->set_content_type('application/json')
 	    ->set_output(json_encode($crime));

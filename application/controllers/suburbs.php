@@ -4,12 +4,14 @@ class Suburbs extends CI_Controller {
 		parent::__construct();
 		//$this->Security->EnsureLogin();
 		$this->load->model('Suburb');
+		$this->load->model('Crime');
 		$this->load->helper('url');
 		$this->load->library('smartylib');
 	}
 
 	function index() {
 		$this->smartylib->assign('results', $this->Suburb->GetAll());
+		$this->smartylib->assign('average_crime', $this->Crime->GetAverageLatest());
 		$this->smartylib->display('suburbs/list.tpl');
 	}
 
@@ -28,6 +30,7 @@ class Suburbs extends CI_Controller {
 			die('Invalid suburb');//TODO: Nice error page
 
 		$this->smartylib->assign('suburb', $suburb);
+		$this->smartylib->assign('average_crime', $this->Crime->GetAverageLatest());
 		$this->smartylib->display('suburbs/view.tpl');
 	}
 
@@ -36,6 +39,7 @@ class Suburbs extends CI_Controller {
 
 		$this->smartylib->assign('results', $this->Suburb->Search($query));
 		$this->smartylib->assign('query', $query);
+		$this->smartylib->assign('average_crime', $this->Crime->GetAverageLatest());
 		$this->smartylib->display('suburbs/search.tpl');
 	}
 
