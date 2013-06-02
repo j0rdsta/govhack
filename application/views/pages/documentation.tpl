@@ -41,7 +41,7 @@
 
 		<h4>Development Notes:</h4>
 			<p>
-				The site was built using <a href="http://ellislab.com/codeigniter">CodeIgniter</a> - a popular PHP framework, <a href="http://foundation.zurb.com">Foundation 4.0</a> - a front-end framework, <a href="http://sass-lang.com">SASS - syntactically awesome stylesheets and PHP</a>
+				The site was built using <a href="http://ellislab.com/codeigniter">CodeIgniter</a> - a popular PHP framework, <a href="http://foundation.zurb.com">Foundation 4.0</a> - a front-end framework, <a href="http://sass-lang.com">SASS - syntactically awesome stylesheets</a> and PHP
 			</p>
 			<p>
 				To process the criminal data-sets into the database php scripts were created which interpreted the data correctly and imported the data straight into PHPMyAdmin. The geo-locations of each suburb were then added to the database by deveoping a script which used the Google Geocode API and imported the appropriate latidude and longitude co-ordinates. After the geo-locations of each suburb were added, finding each location on Google maps was an easy task, the data could then also be used in the ATDW (Australian Tourism Data Warehouse) to find restaurants and other featured material for each suburb. 
