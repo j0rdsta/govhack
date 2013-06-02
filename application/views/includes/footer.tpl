@@ -61,6 +61,14 @@
 			</div>
 			<div class="row">
 				<div class="large-3 small-6 columns">
+					<label for="review-email" class="right inline">Your Email</label>
+				</div>
+				<div class="large-9 small-6 columns">
+					<input type="email" id="review-email" placeholder="eg. john@example.com">
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-3 small-6 columns">
 					<label for="review-comments" class="right inline">Your Comments</label>
 				</div>
 				<div class="large-9 small-6 columns">
