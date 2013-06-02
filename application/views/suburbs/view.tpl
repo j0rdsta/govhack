@@ -5,7 +5,7 @@
 <!-- Header -->
 <div class="row">
 	<div class="large-12 columns">
-		<h1>{$suburb.suburb_name}</h1>
+		<h1 class="suburb_name" data-latitude="{$suburb.latitude}" data-longitude="{$suburb.longitude}">{$suburb.suburb_name}</h1>
 	</div>
 </div>
 

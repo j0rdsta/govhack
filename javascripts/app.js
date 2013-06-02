@@ -11,13 +11,16 @@ $(function() {
 
 		category = container.data("category");
 
+		suburb_lat = $(".suburb_name").data("latitude");
+		suburb_long = $(".suburb_name").data("longitude");
+
 		$.ajax({
 			type: "GET",
 			url:"http://govhack.atdw.com.au/productsearchservice.svc/products",
 			data: {
 				key: 278965474541, // API Key
 				cats: category, // Category
-				latlong: "-27,153", // Latitude/Long
+				latlong: suburb_lat + "," + suburb_long, // Latitude/Long
 				dist: "15", // Distance (km)
 				size: "10", // Number of results
 				out: "json" // Output format
