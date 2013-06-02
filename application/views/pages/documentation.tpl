@@ -5,7 +5,7 @@
 <div class="row">
 	<div class="large-12 columns">
 		<h1>Documentation</h1>
-		<iframe width="500" height="315" src="http://www.youtube.com/embed/4OQGaJrO2r0" frameborder="0" allowfullscreen></iframe>
+		<iframe width="500" height="315" src="http://www.youtube.com/embed/FIJsMse-h6Y" frameborder="0" allowfullscreen></iframe>
 		<br/><br/>
 		<div class="row">
 			<div class="large-2 columns">
@@ -32,8 +32,24 @@
 		<h4>Aim:</h4>
 		<p>		
 		The aim of our project is to provide a user friendly web application to  inform tourists and or locals about the safety of the main suburbs of the gold coast as well as to show a list of entertaining attractions.
-		</p>	
-		<p> The Code can be found at <a href="https://github.com/j0rdsta/govhack">GitHub</a></p>
+		</p>
+
+		<h4>Future Uses and Expansions:</h4>
+		<p>
+			The website contains crime statistics, population growths and features places around each suburb on the Gold Coast. Being only a basic tourism website at the moment, the website could be expanded to include many other variables as well as crime statistics and population growth to differentiate each suburb better. This would then provide much more of a showcase for each suburb and eventually give users the ability to find anything they need from each suburb when searched in a much more user-friendly way than most websites that already provide functionality like this. 
+		</p>
+
+		<h4>Development Notes:</h4>
+			<p>
+				The site was built using <a href="http://ellislab.com/codeigniter">CodeIgniter</a> - a popular PHP framework, <a href="http://foundation.zurb.com">Foundation 4.0</a> - a front-end framework, <a href="http://sass-lang.com">SASS - syntactically awesome stylesheets and PHP
+			</p>
+			<p>
+				To process the criminal data-sets into the database php scripts were created which interpreted the data correctly and imported the data straight into PHPMyAdmin. The geo-locations of each suburb were then added to the database by deveoping a script which used the Google Geocode API and imported the appropriate latidude and longitude co-ordinates. After the geo-locations of each suburb were added, finding each location on Google maps was an easy task, the data could then also be used in the ATDW (Australian Tourism Data Warehouse) to find restaurants and other featured material for each suburb. 
+			</p>
+			<p> 
+				An API has been developed that can be accessed <a href="http://govhat.jordsta.com/api/suburbs">HERE</a>
+			</p>	
+			<p> The website source code can be found at <a href="https://github.com/j0rdsta/govhack">GitHub</a></p>
 	</div>
 	<div class="large-offset-4 columns"></div>
 </div>
@@ -149,7 +165,7 @@
 			<div class="large-8 columns">
 				<hr/>
 			</div>
-		</div>		
+		</div>	
 		<div class="row">
 			<div class="large-2 columns">
 				<img src="/images/jazz.jpg" alt="Jasmin Ernest"/>
@@ -172,6 +188,39 @@
 					Documentation<br/>
 					Design input<br/>
 					Ideas Person<br/>
+					Repetitive Tasks
+				</p>				
+			</div>
+			<div class="large-offset-2 columns"></div>
+		</div>
+		<div class="row">
+			<div class="large-8 columns">
+				<hr/>
+			</div>
+		</div>		
+		<div class="row">
+			<div class="large-2 columns">
+				<img src="/images/jess.jpg" alt="Jasmin Ernest"/>
+			</div>
+			<div class="large-2 columns">
+				<p>
+					Jessica Mills
+				</p>
+			</div>
+			<div class="large-2 columns">
+				<p>
+					Japanese<br/>
+					Testing<br/>
+					Filming<br/>
+					Procrastinating
+				</p>
+			</div>
+			<div class="large-2 columns">
+				<p>
+					Film<br/>
+					Documentation<br/>
+					Design input<br/>
+					Tester<br/>
 					Repetitive Tasks
 				</p>				
 			</div>
