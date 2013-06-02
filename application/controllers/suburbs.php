@@ -39,8 +39,11 @@ class Suburbs extends CI_Controller {
 		if (!$suburb = $this->Suburb->Get($suburb_id))
 			show_error('Invalid suburb');//TODO: Nice error page
 
+		$reviews = array('1', '2');
+
 		$this->smartylib->assign('suburb', $suburb);
 		$this->smartylib->assign('average_crime', $this->Crime->GetAverageLatest());
+		$this->smartylib->assign('reviews', $reviews);
 		$this->smartylib->display('suburbs/view.tpl');
 	}
 

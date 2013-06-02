@@ -50,58 +50,57 @@
 <div class="row">
 	<div class="large-12 columns">
 		<div class="section-container auto" data-section>
-			<section>
+			<section class="load-places">
 				<p class="title" data-section-title><a href="#panel1">Restaurants</a></p>
 				<div class="content initial" data-section-content data-category="RESTAURANT">
 					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
-			<section>
+			<section class="load-places">
 				<p class="title" data-section-title><a href="#panel2">Attractions</a></p>
 				<div class="content" data-section-content data-category="ATTRACTION">
 					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
-			<section>
+			<section class="load-places">
 				<p class="title" data-section-title><a href="#panel3">Tours</a></p>
 				<div class="content" data-section-content data-category="TOUR">
 					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
-			<section>
+			<section class="load-places">
 				<p class="title" data-section-title><a href="#panel4">Transport</a></p>
 				<div class="content" data-section-content data-category="TRANSPORT">
 					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
-			<section>
+			<section class="load-places">
 				<p class="title" data-section-title><a href="#panel5">Events</a></p>
 				<div class="content" data-section-content data-category="EVENT">
 					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
-			<section>
+			<section class="load-places">
 				<p class="title" data-section-title><a href="#panel6">Hire</a></p>
 				<div class="content" data-section-content data-category="HIRE">
 					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
-			<section>
+			<section class="load-nearby-places">
 				<p class="title" data-section-title><a href="#panel7"><i class="icon icon-screenshot"></i> Near Me</a></p>
-				<div class="content" data-section-content data-category="HIRE">
+				<div class="content" data-section-content>
 					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
 			<section>
-				<p class="title" id="reviewTab" data-section-title><a href="#panel7">Reviews</a></p>
-				<div class="content" data-section-content data-category="HIRE">
-					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
+				<p class="title" id="reviewTab" data-section-title><a href="#panel8">Reviews</a></p>
+				<div class="content" data-section-content>
+					{include "reviews/list.tpl"}
 				</div>
 			</section>				
 		</div>
 	</div>
 </div>
-
 
 
 {include "includes/footer.tpl"}

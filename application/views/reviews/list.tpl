@@ -1,7 +1,7 @@
-{if !empty($results)}
-	{foreach $results as $result}
+{if !empty($reviews)}
+	{foreach $reviews as $review}
 	<!-- Item -->
-	<a href="/suburbs/view/{$result.suburb_id}" class="{cycle values='odd,even'}">
+	<!--<a href="/suburbs/view/{$result.suburb_id}" class="{cycle values='odd,even'}">
 		<div class="row">
 			<div class="small-2 columns text-center">
 				<img src="{$result.image|default:'/images/placeholder_pin.png'}" alt="">
@@ -13,13 +13,14 @@
 				<p>Population: {$result.population_latest|number_format:0:".":","}</p>
 			</div>
 		</div>
-	</a>
+	</a>-->
+	Review
 	<!-- End Item -->
 	{/foreach}
 {else}
 <div class="row">
 	<div class="large-12 columns">
-		<p>No Results Found</p>
+		<p>No Reviews Found. <a>Add One?</a></p>
 	</div>
 </div>
 {/if}

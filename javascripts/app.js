@@ -3,7 +3,7 @@ $(function() {
 		$(this).closest('form').submit();
 	})
 
-	function loadPlaces(container) {
+	function loadPlaces(container, latitude, longitude) {
 		if(container.data('places-loaded')) {
 			return;
 		}
@@ -11,8 +11,8 @@ $(function() {
 
 		category = container.data("category");
 
-		suburb_lat = $(".suburb_name").data("latitude");
-		suburb_long = $(".suburb_name").data("longitude");
+		suburb_lat = latitude || $(".suburb_name").data("latitude");
+		suburb_long = longitude || $(".suburb_name").data("longitude");
 
 		$.ajax({
 			type: "GET",
@@ -66,12 +66,23 @@ $(function() {
 		});
 	}
 
-	$(".section-container section .title").on('click', function(container){
+	$(".section-container section.load-places .title").on('click', function(container){
 		loadPlaces($(this).closest('section').find('.content'));
 	});
 
+	$(".section-container section.load-nearby-places .title").on('click', function(container){
+		var content = $(this).closest('section').find('.content');
+		if(navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(function(position) {
+				loadPlaces(content, position.coords.latitude, position.coords.longitude);
+			});
+		} else {
+			content.html('<p>Location search not enabled on this device</p>');
+		}
+	});
+
 	// Load initial content
-	$(".section-container section .content.initial").each(function(container){
+	$(".section-container section.load-places .content.initial").each(function(container){
 		loadPlaces($(this));
 	});
 });
