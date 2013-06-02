@@ -65,4 +65,12 @@ class Suburbs extends CI_Controller {
 	    ->set_content_type('application/json')
 	    ->set_output(json_encode($population));
 	}
+
+	function CrimeJSON($suburb_id = null) {
+		$crime = $this->Suburb->GetCrime($suburb_id);
+
+		$this->output
+	    ->set_content_type('application/json')
+	    ->set_output(json_encode($crime));
+	}	
 }

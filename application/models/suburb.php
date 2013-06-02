@@ -41,6 +41,16 @@ class Suburb extends CI_Model {
 		$this->db->order_by('year', 'ASC');
 		return $this->db->get()->result_array();
 	}
+
+	function GetCrime($suburb_id) {
+		$this->db->select('year, SUM(count) AS total_count');
+		$this->db->from('data_crime');
+		$this->db->join('suburbs', 'data_crime.suburb_name = suburbs.suburb_name', 'left');
+		$this->db->where(array('suburb_id' => $suburb_id));
+		$this->db->group_by("year");
+		$this->db->order_by('year', 'ASC');
+		return $this->db->get()->result_array();
+	}	
 	
 	function Count($where = null) {
 		$this->db->select('COUNT(*) AS count');
