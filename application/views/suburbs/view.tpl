@@ -92,6 +92,12 @@
 					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
+			<section>
+				<p class="title" id="reviewTab" data-section-title><a href="#panel7">Reviews</a></p>
+				<div class="content" data-section-content data-category="HIRE">
+					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
+				</div>
+			</section>				
 		</div>
 	</div>
 </div>

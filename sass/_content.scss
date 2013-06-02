@@ -29,3 +29,21 @@ a {
 .warning.label {
 	background: #f29810;
 }
+
+#reviewTab {
+	background-color:$primary-color;
+	font-weight:bold;
+	a { 
+		color:#FFF;
+	}
+}
+
+#reviewTab:hover {
+	background-color:lighten($primary-color, 15%);
+}
+
+.section-container {
+	p.title {
+		padding:10px 15px;
+	}
+}
