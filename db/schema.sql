@@ -41,10 +41,10 @@ CREATE TABLE `suburbs` (
   `crime_accumulative` int(10) unsigned DEFAULT NULL,
   `crime_percentile` float DEFAULT NULL,
   `crime_ranking` int(10) unsigned DEFAULT NULL,
-  `crime_growth` float DEFAULT NULL,
+  `crime_latest` float DEFAULT NULL,
   `population_accumulative` int(10) unsigned DEFAULT NULL,
   `population_percentile` float DEFAULT NULL,
   `population_ranking` int(10) unsigned DEFAULT NULL,
-  `population_growth` float DEFAULT NULL,
+  `population_latest` float DEFAULT NULL,
   PRIMARY KEY (`suburb_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=56 ;
