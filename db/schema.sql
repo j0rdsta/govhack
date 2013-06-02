@@ -27,6 +27,7 @@ CREATE TABLE `data_population` (
 CREATE TABLE `reviews` (
   `review_id` int(11) NOT NULL,
   `suburb_id` int(11) NOT NULL,
+  `name` varchar(80) NOT NULL,
   `review` text NOT NULL,
   `ip_address` varchar(50) NOT NULL,
   `rating` tinyint(1) unsigned NOT NULL,
