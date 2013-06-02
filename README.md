@@ -1,11 +1,8 @@
 FullStop
 =======
 
-To support the rapid development of the app / website the project should be split into two separate parts:
-
-
 ### App
-The front-end of the project. This is what users will see.
+The front-end of the project. This is what users will see. Import script in `data_import/` - this processes the data and calculates location co-ordinates.
 
-### API
-Support the collection and manipulation of data. This will be written in PHP and provide a number of JSON feeds for the App to use.
+### Live Demo
+A demo of this website is live at [govhat.jordsta.com](http://govhat.jordsta.com/). Documentation for this is also available at [govhat.jordsta.com/pages/documentation](http://govhat.jordsta.com/pages/documentation)
