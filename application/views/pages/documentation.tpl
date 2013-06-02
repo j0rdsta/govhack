@@ -65,7 +65,7 @@
 		</div>
 		<div class="row">
 			<div class="large-2 columns">
-				<img src="../images/jordan.jpg" alt="Jordan Gardiner"/>
+				<img src="/images/jordan.jpg" alt="Jordan Gardiner"/>
 			</div>
 			<div class="large-2 columns">
 				<p>
@@ -96,7 +96,7 @@
 		</div>		
 		<div class="row">
 			<div class="large-2 columns">
-				<img src="../images/matt.jpg" alt="Matt Patterson"/>
+				<img src="/images/matt.jpg" alt="Matt Patterson"/>
 			</div>
 			<div class="large-2 columns">
 				<p>
@@ -123,7 +123,7 @@
 		</div>		
 		<div class="row">
 			<div class="large-2 columns">
-				<img src="../images/jake.jpg" alt="Jake Sieben"/>
+				<img src="/images/jake.jpg" alt="Jake Sieben"/>
 			</div>
 			<div class="large-2 columns">
 				<p>
@@ -152,7 +152,7 @@
 		</div>		
 		<div class="row">
 			<div class="large-2 columns">
-				<img src="../images/jazz.jpg" alt="Jasmin Ernest"/>
+				<img src="/images/jazz.jpg" alt="Jasmin Ernest"/>
 			</div>
 			<div class="large-2 columns">
 				<p>
@@ -184,7 +184,7 @@
 		</div>		
 		<div class="row">
 			<div class="large-2 columns">
-				<img src="../images/bentley.jpg" alt="Bentley O'Kane Chase"/>
+				<img src="/images/bentley.jpg" alt="Bentley O'Kane Chase"/>
 			</div>
 			<div class="large-2 columns">
 				<p>
