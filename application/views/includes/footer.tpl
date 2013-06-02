@@ -61,9 +61,14 @@
 	{literal}
 	<script>
 		$(function() {
-			$(".section-container section .content").each(function(container){
-				container = $(this);
-				category = $(this).data("category");
+			function loadPlaces(container) {
+				if(container.data('places-loaded')) {
+					return;
+				}
+				container.data('places-loaded', true);
+
+				category = container.data("category");
+
 				$.ajax({
 					type: "GET",
 					url:"http://govhack.atdw.com.au/productsearchservice.svc/products",
@@ -71,13 +76,17 @@
 						key: 278965474541, // API Key
 						cats: category, // Category
 						latlong: "-27,153", // Latitude/Long
-						dist: "50", // Distance (km)
+						dist: "15", // Distance (km)
 						size: "10", // Number of results
 						out: "json" // Output format
 					},
 					success: function(data){
-						$.each(data, function() {
-							$.each(this, function(k, v) {
+						container.html('');
+
+						var products = data['products'];
+
+						if(products && products.length) {
+							$.each(products, function(k, v) {
 								// Node
 								content = "<div class='node'>";
 
@@ -105,9 +114,20 @@
 
 								container.append(content);
 							});
-						});
+						} else {
+							container.html('<p>No results found.</p>');
+						}
             		}
 				});
+			}
+
+			$(".section-container section .title").on('click', function(container){
+				loadPlaces($(this).closest('section').find('.content'));
+			});
+
+			// Load initial content
+			$(".section-container section .content.initial").each(function(container){
+				loadPlaces($(this));
 			});
 		});
 	</script>

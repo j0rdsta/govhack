@@ -41,35 +41,46 @@
 		<div class="section-container auto" data-section>
 			<section>
 				<p class="title" data-section-title><a href="#panel1">Restaurants</a></p>
-				<div class="content restaurant" data-section-content data-category="RESTAURANT">
+				<div class="content initial" data-section-content data-category="RESTAURANT">
+					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
 			<section>
 				<p class="title" data-section-title><a href="#panel2">Attractions</a></p>
 				<div class="content" data-section-content data-category="ATTRACTION">
+					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
 			<section>
-				<p class="title" data-section-title><a href="#panel2">Tours</a></p>
+				<p class="title" data-section-title><a href="#panel3">Tours</a></p>
 				<div class="content" data-section-content data-category="TOUR">
+					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
 			<section>
-				<p class="title" data-section-title><a href="#panel2">Transport</a></p>
+				<p class="title" data-section-title><a href="#panel4">Transport</a></p>
 				<div class="content" data-section-content data-category="TRANSPORT">
+					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
 			<section>
-				<p class="title" data-section-title><a href="#panel2">Events</a></p>
+				<p class="title" data-section-title><a href="#panel5">Events</a></p>
 				<div class="content" data-section-content data-category="EVENT">
+					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
 			<section>
-				<p class="title" data-section-title><a href="#panel2">Hire</a></p>
+				<p class="title" data-section-title><a href="#panel6">Hire</a></p>
 				<div class="content" data-section-content data-category="HIRE">
+					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
 				</div>
 			</section>
-
+			<section>
+				<p class="title" data-section-title><a href="#panel7"><i class="icon icon-screenshot"></i> Near Me</a></p>
+				<div class="content" data-section-content data-category="HIRE">
+					<p>Loading... <img src="/images/loader.gif" alt="" /></p>
+				</div>
+			</section>
 		</div>
 	</div>
 </div>
