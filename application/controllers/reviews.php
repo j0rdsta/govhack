@@ -8,10 +8,17 @@ class Reviews extends CI_Controller {
 		$this->load->helper('url');
 	}
 
+	private function valid_email($field) {
+	    return preg_match('/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/', $field);
+	}
+
 	function Create() {
 		$review = @$_POST['review'];
 		if(empty($review) || empty($review['name']) || empty($review['review']) || empty($review['rating']) || empty($review['suburb_id'])  || empty($review['email']))
 			show_error('Invalid Review');
+
+		if (!$this->valid_email($review['email']))
+			show_error('Invalid Email');
 
 		$review['rating'] = (int) $review['rating'];
 		$suburb_id = @$review['suburb_id'];
