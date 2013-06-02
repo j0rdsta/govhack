@@ -6,6 +6,7 @@
 	<div class="large-12 columns">
 		<h1>Documentation</h1>
 		<iframe width="500" height="315" src="http://www.youtube.com/embed/4OQGaJrO2r0" frameborder="0" allowfullscreen></iframe>
+		<br/><br/>
 		<div class="row">
 			<div class="large-2 columns">
 				<p>
@@ -32,6 +33,7 @@
 		<p>		
 		The aim of our project is to provide a user friendly web application to  inform tourists and or locals about the safety of the main suburbs of the gold coast as well as to show a list of entertaining attractions.
 		</p>	
+		<p> The Code can be found at <a href="https://github.com/j0rdsta/govhack">GitHub</a></p>
 	</div>
 	<div class="large-offset-4 columns"></div>
 </div>
