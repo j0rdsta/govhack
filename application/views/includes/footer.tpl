@@ -61,23 +61,8 @@
 	{literal}
 	<script>
 		$(function() {
-			$(".search").change(function(){
-				var query = $(this).val();
-				$.ajax({
-					type: "GET",
-					url:"http://govhack.atdw.com.au/productsearchservice.svc/products",
-					data: {
-						key: 278965474541,
-						term: query,
-						out: "json"
-					},
-					success: function(data){
-		                alert(data);
-		            }
-				});
-			});
 			$(".section-container section .content").each(function(container){
-				catcontain = $(this);
+				container = $(this);
 				category = $(this).data("category");
 				$.ajax({
 					type: "GET",
@@ -118,9 +103,7 @@
 
 								content += "<hr>";
 
-								debugger;
-
-								$(catcontain).html(content);
+								container.append(content);
 							});
 						});
             		}
