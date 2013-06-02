@@ -58,6 +58,7 @@ class Suburbs extends CI_Controller {
 			if($search_params['crime'] == 'high') {
 				$search_where['crime_latest >'] = $average_crime;
 			} else {
+				$search_where['crime_latest !='] = 0;
 				$search_where['crime_latest <='] = $average_crime;
 			}
 		}
