@@ -1,9 +1,6 @@
 // Content
 
 a {
-	h5 {
-		color: inherit;
-	}
 	&.even, &.odd {
 		display: block;
 		border-bottom: 1px solid #ddd;
