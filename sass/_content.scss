@@ -52,3 +52,15 @@ iframe.maps {
 	width: 100%;
 	border: 0;
 }
+
+ul.parsley-error-list {
+	display: block;
+	list-style: none;
+	padding: 0.375em 0.25em;
+	margin-top: -1.3125em;
+	margin-bottom: 1em;
+	font-size: 0.75em;
+	font-weight: bold;
+	background: #c60f13;
+	color: white;
+}

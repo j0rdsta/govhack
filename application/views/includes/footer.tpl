@@ -55,7 +55,7 @@
 
 	<div id="reviewModal" class="reveal-modal">
 		<h2>Review {$suburb.suburb_name|default:'This Suburb'}</h2>
-		<form action="/reviews/create" data-validate="parsley" class="custom" method="post">
+		<form id="review" action="/reviews/create" data-validate="parsley" class="custom" method="post">
 			<input type="hidden" name="review[suburb_id]" value="{$suburb.suburb_id|default:false}" />
 			<div class="row">
 				<div class="large-3 small-6 columns">
@@ -86,8 +86,7 @@
 					<label class="right inline">Your Review</label>
 				</div>
 				<div class="large-9 small-6 columns">
-					<div id="star" name="review[rating]"></div>
-					<input type="text" name="review[rating]" />
+					<div id="star"></div>
 				</div>
 			</div>
 			<div class="row">

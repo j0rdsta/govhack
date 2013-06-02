@@ -85,4 +85,8 @@ $(function() {
 	$(".section-container section.load-places .content.initial").each(function(container){
 		loadPlaces($(this));
 	});
+
+	$('form#review').parsley({
+		errorClass: 'error'
+	});
 });
