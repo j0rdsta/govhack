@@ -8,6 +8,30 @@
 		<h1>{$suburb.suburb_name}</h1>
 	</div>
 </div>
+
+<div class="row">
+	<div class="large-3 columns">
+		<p>Crime Rating: 
+			{if $suburb.crime_percentile}
+				{if $suburb.crime_percentile > 1}
+					<span class="radius alert label">High</span>
+				{elseif $suburb.crime_percentile > 0}
+					<span class="radius warning label">Medium</span>
+				{else}
+					<span class="radius success label">Low</span>
+				{/if}
+			{else}
+				<span class="radius secondary label">Unknown</span>
+			{/if}
+		</p>
+	</div>
+	<div class="large-3 columns">
+		<p>Population: {$suburb.population_percentile}</p>
+	</div>
+	<div class="large-offset-6 columns">
+	</div>
+</div>
+			
 <!-- End Header -->
 
 <!-- Map -->
