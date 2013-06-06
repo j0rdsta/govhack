@@ -280,7 +280,7 @@ function update_suburbs($update_locations = false) {
 
 function find_location($address) {
 	set_time_limit(0);
-	$urlAddress = urlencode($address);
+	$urlAddress = urlencode($address . ', Gold Coast');
 	$url = "http://maps.googleapis.com/maps/api/geocode/json?sensor=false&region=au&address=".$urlAddress;
 
 	$request = curl_init();
@@ -333,7 +333,7 @@ function find_location($address) {
 //import_crime_csv('data/crime/surfers_paradise.csv');
 
 generate_suburbs();
-update_suburbs();
+update_suburbs(true);
 
 ?>
 </pre>
